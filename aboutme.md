@@ -8,7 +8,7 @@ subtitle:
 
 - I am a research coordinator at the Center for Mentalh Health at Penn Medicine
 - I am pursuing a Masters in Education at the University of Pennsylvania in Statistics, Measurement, Assessment, and Research Technology
-- I'm an avid runner and sit on the board of Philadelphia Runner Track Club.
+- I'm an avid runner and sit on the board of [Philadelphia Runner Track Club](https://www.philadelphiarunnertrackclub.com/).
 
 #### My resume:
 
