@@ -21,9 +21,9 @@ author: Nick Cardamone
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  Projects:
+    - CASPER: "https://project-casper.netlify.app"
+    - SUDs Measures Library: "https://ncardamo.shinyapps.io/mySUDSmeasures/"
 
 ################
 # --- Logo --- #
