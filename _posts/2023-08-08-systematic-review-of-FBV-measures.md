@@ -2,9 +2,9 @@
 layout: post
 title: Brief, freely accessible, and valid self-report measures for substance use disorders and treatment
 subtitle: A systematic review
-cover-img: "https://cdn.ncbi.nlm.nih.gov/pubmed/eaba5c0d-7e6e-41c6-adb7-42a4806a5336/core/images/pubmed-logo-blue.svg"
-thumbnail-img: "https://cdn.ncbi.nlm.nih.gov/pubmed/eaba5c0d-7e6e-41c6-adb7-42a4806a5336/core/images/pubmed-logo-blue.svg"
-share-img: "https://cdn.ncbi.nlm.nih.gov/pubmed/eaba5c0d-7e6e-41c6-adb7-42a4806a5336/core/images/pubmed-logo-blue.svg"
+cover-img: "https://github.com/nickcardamone/nickcardamone.github.io/blob/403a0abc02bffd12ae2a6fd38da45641bb3bd547/assets/img/SUDs%20table.png"
+thumbnail-img: "https://github.com/nickcardamone/nickcardamone.github.io/blob/403a0abc02bffd12ae2a6fd38da45641bb3bd547/assets/img/SUDs%20table.png"
+share-img: "https://github.com/nickcardamone/nickcardamone.github.io/blob/403a0abc02bffd12ae2a6fd38da45641bb3bd547/assets/img/SUDs%20table.png"
 tags: [review, substance use disorder, measures, screening]
 ---
 
