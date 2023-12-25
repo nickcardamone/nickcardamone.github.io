@@ -8,7 +8,7 @@ share-img: "https://academyhealth.confex.com/img/academyhealth/2023di/cfp_banner
 tags: [dissemination, implementation science, ICC, multilevel modeling]
 ---
 
-I recently presented an abstact at the 16th Annual Dissemination and Implementation Conference by AcademyHealth.
+I recently presented an abstact at the 16th Annual Dissemination and Implementation Conference by AcademyHealth, "Meaningful clustering coefficient estimates for multilevel implementation trials in behavioral health"
 
 TLDR: If you're designing a study with clusters (e.g. providers within clinics, patients within providers), it's crucial to account for the correlation of responses within clusters. 
 
