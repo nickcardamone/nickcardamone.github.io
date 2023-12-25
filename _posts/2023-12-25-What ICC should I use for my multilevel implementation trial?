@@ -1,1 +1,16 @@
+---
+layout: post
+title: What ICC should I use for my multilevel implementation trial?
+subtitle: A conference abstract
+cover-img: "https://academyhealth.confex.com/img/academyhealth/2023di/cfp_banner.png"
+thumbnail-img: "https://academyhealth.confex.com/img/academyhealth/2023di/cfp_banner.png"
+share-img: "https://academyhealth.confex.com/img/academyhealth/2023di/cfp_banner.png"
+tags: [dissemination, implementation science, ICC, multilevel modeling]
+---
+
+I recently presented an abstact at the 16th Annual Dissemination and Implementation Conference by AcademyHealth.
+
+TLDR: If you're designing a study with clusters (e.g. providers within clinics, patients within providers), it's crucial to account for the correlation of responses within clusters. 
+
+[Link to to the conference abstact at *AcademyHealth*](https://academyhealth.confex.com/academyhealth/2023di/meetingapp.cgi/Paper/62932)
 
