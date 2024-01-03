@@ -2,9 +2,9 @@
 layout: post
 title: What ICC should I use for my multilevel implementation trial?
 subtitle: A conference abstract
-cover-img: "https://en.wikipedia.org/wiki/Intraclass_correlation#/media/File:ICC-example2.svg"
-thumbnail-img: "https://en.wikipedia.org/wiki/Intraclass_correlation#/media/File:ICC-example2.svg"
-share-img: "https://en.wikipedia.org/wiki/Intraclass_correlation#/media/File:ICC-example2.svg"
+cover-img: "assets/img/icc-examples-1.png"
+thumbnail-img: "assets/img/icc-examples-1.png"
+share-img: "assets/img/icc-examples-1.png"
 tags: [dissemination, implementation science, ICC, multilevel modeling]
 ---
 
