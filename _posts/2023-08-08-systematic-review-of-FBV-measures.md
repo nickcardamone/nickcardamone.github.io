@@ -2,9 +2,9 @@
 layout: post
 title: Brief, freely accessible, and valid self-report measures for substance use disorders and treatment
 subtitle: A systematic review
-cover-img: "https://github.com/nickcardamone/nickcardamone.github.io/blob/403a0abc02bffd12ae2a6fd38da45641bb3bd547/assets/img/SUDs%20table.png"
-thumbnail-img: "https://github.com/nickcardamone/nickcardamone.github.io/blob/403a0abc02bffd12ae2a6fd38da45641bb3bd547/assets/img/SUDs%20table.png"
-share-img: "https://github.com/nickcardamone/nickcardamone.github.io/blob/403a0abc02bffd12ae2a6fd38da45641bb3bd547/assets/img/SUDs%20table.png"
+cover-img: "assets/img/SUDs table.png"
+thumbnail-img: "assets/img/SUDs table.png"
+share-img: "assets/img/SUDs table.png"
 tags: [review, substance use disorder, measures, screening]
 ---
 
