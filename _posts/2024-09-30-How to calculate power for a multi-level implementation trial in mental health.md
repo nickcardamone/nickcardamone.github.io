@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to calculate power for a multi-level implementation trial in mental health.
-subtitle: Peer-reviewed article
+title: <span style="color:black;">How to calculate power for a multi-level implementation trial in mental health.
+subtitle: <span style="color:black;">Peer-reviewed article
 cover-img: "assets/img/d_boxplot.png"
 thumbnail-img: "assets/img/d_boxplot.png"
 share-img: "assets/img/d_boxplot.png"
