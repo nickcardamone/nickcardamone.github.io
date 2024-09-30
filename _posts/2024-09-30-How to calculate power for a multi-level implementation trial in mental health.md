@@ -8,12 +8,6 @@ share-img: "assets/img/d_boxplot.png"
 tags: [dissemination, implementation science, effect size, ICC, multilevel modeling]
 ---
 
-<div style="color:black;">
-<h1>How to calculate power for a multi-level implementation trial in mental health.</h1>
-<h2>Peer-reviewed article</h2>
-<p><em>Posted on September 30, 2024</em></p>
-</div>
-
 My colleagues and I published an article “Calculating power for multilevel implementation trials in mental health: Meaningful effect sizes, intraclass correlation coefficients, and proportions of variance explained by covariates" in the Journal of Implementation Research and Practice.
 
 Here’s a quick overview of some important points
