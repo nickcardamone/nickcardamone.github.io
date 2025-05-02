@@ -16,7 +16,7 @@ Here’s a quick overview of some important points
 
 **Can Large Language Models replicate clinician judgement when classifying terms from clinical notes?**
 * Large Language Models (LLMs), like OpenAI’s GPT models, can streamline the classification and coding of unstructured EHR text due to their massive training data sets and advanced text processing (1, 2).
-* Preliminary evidence shows that LLMs outperform crowd workers when annotating electronic medical record text data [3, 4].
+* Preliminary evidence shows that LLMs outperform crowd workers when annotating electronic medical record text data (3, 4).
 * However, the reliability of LLMs in replicating clinical judgement in mental health remains uncertain, especially when considering the inherent complexities of mental health disorders. 
 
 **We evaluated ChatGPT's behavior when classifying electronic health record terms:**
