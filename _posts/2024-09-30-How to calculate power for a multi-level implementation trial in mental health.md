@@ -12,7 +12,7 @@ My colleagues and I published an article “Calculating power for multilevel imp
 
 Here’s a quick overview of some important points
 
-**TLDR:** Designing implementation studies in mental health settings? Make sure to understand the statistical parameters critical for power analysis, especially effect sizes, ICC, and covariate R².
+**TL;DR:** Designing implementation studies in mental health settings? Make sure to understand the statistical parameters critical for power analysis, especially effect sizes, ICC, and covariate R².
 
 **Effect Sizes, ICCs, and Covariate R²s Are Crucial for Multilevel Trials:**
 * In multilevel studies (e.g., patients nested within providers, providers within clinics), it’s crucial to account for the clustering effects when determining sample sizes. Small changes in these parameters can dramatically affect the number of sites or participants needed for robust results.
