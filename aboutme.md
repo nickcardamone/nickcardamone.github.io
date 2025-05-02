@@ -4,13 +4,12 @@ title: About me
 subtitle: 
 ---
 
-### Hi - my name is Nick. Here's a little bit about me:
+### Hi, my name is Nick. Here's a little bit about me:
 - I'm an early career healthcare data scientist with deep experience across various data sources (EMR, claims, Medicare Part D, etc.) and strong technical skills in SQL, R, SAS, and Python. I've had a number of different data analyitc roles across several research projects but my main function in all of them has been to extract insights from data and communicate findings to both technical and non-technical audiences. 
 - I earned my M.S.Ed. at the University of Pennsylvania in Statistics, Measurement, Assessment, and Research Technology.
-- I'm an avid runner and sit on the board of [Philadelphia Runner Track Club](https://www.philadelphiarunnertrackclub.com/).
+- I'm an avid runner and sit on the board of [Philadelphia Runner Track Club](https://www.philadelphiarunnertrackclub.com/).  
 
-### My resume:
-
+### My resume:  
 ##### Data Analyst/Programmer
 Corporal Michael J. Crescenz VA Medical Center – Philadelphia, PA  
 _2024-Present_
