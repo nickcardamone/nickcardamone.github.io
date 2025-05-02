@@ -2,9 +2,9 @@
 layout: post
 title: Agencies low adopting of buprenorphine, methadone, and naltrexone are led by individuals who endorse stigmatizing beliefs toward them 
 subtitle: A quantiative study
-cover-img: "https://www.cdc.gov/stopoverdose/stigma/images/MOUD-medications-FDA-approved.jpg?_=87234"
-thumbnail-img: "https://www.cdc.gov/stopoverdose/stigma/images/MOUD-medications-FDA-approved.jpg?_=87234"
-share-img: "https://www.cdc.gov/stopoverdose/stigma/images/MOUD-medications-FDA-approved.jpg?_=87234"
+cover-img: "https://www.cdc.gov/overdose-prevention/media/images/2024/05/MOUD-thumb.jpg"
+thumbnail-img: "https://www.cdc.gov/overdose-prevention/media/images/2024/05/MOUD-thumb.jpg"
+share-img: "https://www.cdc.gov/overdose-prevention/media/images/2024/05/MOUD-thumb.jpg"
 tags: [harm reduction, medications for opioid use disorder, opioid use disorder, stigma]
 ---
 
