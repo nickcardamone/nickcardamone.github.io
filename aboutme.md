@@ -11,26 +11,22 @@ subtitle:
 
 ### My resume:  
 ##### Data Analyst/Programmer
-Corporal Michael J. Crescenz VA Medical Center – Philadelphia, PA  
-_2024-Present_
+Corporal Michael J. Crescenz VA Medical Center – Philadelphia, PA  (_2024-Present_)
 * Serve as analytical lead for VA-funded research projects using the VA’s electronic medical record, claims data from the Center for Medicare and Medicaid Services, and other sources; perform data extraction, transformation, and analysis using SQL, R, and SAS.
 * Develop and document reproducible data pipelines, including an R-based workflow evaluating the impact of generic drug conversion on prior authorization in Medicare Part D data.  
   
 ##### Clinical Research Coordinator
-The Center for Mental Health, Perelman School of Medicine - Philadelphia, PA  
-_2021-2024_
+The Center for Mental Health, Perelman School of Medicine - Philadelphia, PA  (_2021-2024_)
 * Led project management and data analysis for five studies in mental health services, harm reduction, and implementation science; co-authored over a dozen peer-reviewed articles and multiple grant and conference submissions.
 * Provided analytic and writing support on city contracts, including Medicaid claims analysis, policy briefs, infographics, and public health research deliverables.  
   
 ##### Data Science Intern
-Biomotivate - Pittsburgh, PA  
-_2020-2021_ 
+Biomotivate - Pittsburgh, PA (_2020-2021_)
 * Developed a predictive model of opioid use disorder treatment dropout.
 * Created an R Shiny web app to visualize health metrics and wellbeing data.  
   
 ##### Clinical Research Assistant
-Epigenetic Effects of Traumatic Brain Injury Recovery Lab, Children's Hospital of Pittsburgh - Pittsburgh, PA  
-_2019-2021_
+Epigenetic Effects of Traumatic Brain Injury Recovery Lab, Children's Hospital of Pittsburgh - Pittsburgh, PA  (_2019-2021_)
 * Recruited dozens of families for a longitudinal traumatic brain injury study.
 * Delivered informed consent, administered cognitive testing, and collected biological specimens.
 
