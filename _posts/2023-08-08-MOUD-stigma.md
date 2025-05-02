@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Agencies low adopting of buprenorphine, methadone, and naltrexone are led by individuals who endorse stigmatizing beliefs toward them 
+title: Treatment centers with low adoption of buprenorphine, methadone, and naltrexone are often led by individuals who endorse stigmatizing beliefs toward MOUD 
 subtitle: A quantiative study
 cover-img: "https://www.cdc.gov/overdose-prevention/media/images/2024/05/MOUD-thumb.jpg"
 thumbnail-img: "https://www.cdc.gov/overdose-prevention/media/images/2024/05/MOUD-thumb.jpg"
