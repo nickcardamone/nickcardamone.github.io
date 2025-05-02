@@ -4,12 +4,12 @@ title: About me
 subtitle: 
 ---
 
-#### My name is Nick Cardamone. Here's a little bit about me:
+### Hi - my name is Nick. Here's a little bit about me:
 - I'm an early career healthcare data scientist with deep experience across various data sources (EMR, claims, Medicare Part D, etc.) and strong technical skills in SQL, R, SAS, and Python. I've had a number of different data analyitc roles across several research projects but my main function in all of them has been to extract insights from data and communicate findings to both technical and non-technical audiences. 
 - I earned my M.S.Ed. at the University of Pennsylvania in Statistics, Measurement, Assessment, and Research Technology.
 - I'm an avid runner and sit on the board of [Philadelphia Runner Track Club](https://www.philadelphiarunnertrackclub.com/).
 
-#### My resume:
+### My resume:
 
 ##### Data Analyst/Programmer
 Corporal Michael J. Crescenz VA Medical Center – Philadelphia, PA  
@@ -18,7 +18,7 @@ _2024-Present_
 * Develop and document reproducible data pipelines, including an R-based workflow evaluating the impact of generic drug conversion on prior authorization in Medicare Part D data.  
   
 ##### Clinical Research Coordinator
-The Center for Mental Health, University of Pennsylvania Perelman School of Medicine - Philadelphia, PA  
+The Center for Mental Health, Perelman School of Medicine - Philadelphia, PA  
 _2021-2024_
 * Led project management and data analysis for five studies in mental health services, harm reduction, and implementation science; co-authored over a dozen peer-reviewed articles and multiple grant and conference submissions.
 * Provided analytic and writing support on city contracts, including Medicaid claims analysis, policy briefs, infographics, and public health research deliverables.  
