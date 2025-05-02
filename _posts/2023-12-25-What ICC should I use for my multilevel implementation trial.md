@@ -10,7 +10,7 @@ tags: [dissemination, implementation science, ICC, multilevel modeling]
 
 I recently presented an abstact at the 16th Annual Dissemination and Implementation Conference by AcademyHealth, "Meaningful clustering coefficient estimates for multilevel implementation trials in behavioral health." Here's a primer about clustering:
 
-TL;DR: If you're designing a study with clusters (e.g. providers within clinics, patients within providers), it's crucial to account for the correlation of responses within clusters. 
+**TL;DR:** If you're designing a study with clusters (e.g. providers within clinics, patients within providers), it's crucial to account for the correlation of responses within clusters. 
 
 **ICCs are critical but not frequently reported in implementation research.**
 * The intraclass correlation coefficient (ICC) is a critical parameter in statistical power analyses for multilevel implementation studies but is frequently not reported in published manuscripts (1).
