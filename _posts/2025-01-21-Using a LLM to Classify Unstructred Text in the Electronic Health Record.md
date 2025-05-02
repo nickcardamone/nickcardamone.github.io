@@ -12,7 +12,7 @@ My colleagues and I published an article “Classifying Unstructured Text in Ele
 
 Here’s a quick overview of some important points
 
-**TLDR:** Large Language Models (LLMs) can be helpful assistants in extracting meaningful clinical features from electronic health record text for a predictive model in a mental health care setting.
+**TL;DR:** Large Language Models (LLMs) can be helpful assistants in extracting meaningful clinical features from electronic health record text for a predictive model in a mental health care setting.
 
 **Can Large Language Models replicate clinician judgement when classifying terms from clinical notes?**
 * Large Language Models (LLMs), like OpenAI’s GPT models, can streamline the classification and coding of unstructured EHR text due to their massive training data sets and advanced text processing (1, 2).
