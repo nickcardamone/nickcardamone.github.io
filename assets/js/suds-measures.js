@@ -617,12 +617,13 @@
         (d.accessible ? "" : " · not freely available") +
         "</span>";
     } else if (rec.kind === "construct") {
+      // Definitions are withheld until reviewed, so a construct may have none.
       html =
         "<b>" +
         d.name +
-        "</b><span>" +
-        (d.blurb || "") +
-        "</span><span>" +
+        "</b>" +
+        (d.blurb ? "<span>" + d.blurb + "</span>" : "") +
+        "<span>" +
         rec.node.leaves().length +
         " measures</span>";
     } else {

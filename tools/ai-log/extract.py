@@ -38,7 +38,61 @@ QUEUE = os.path.join(HERE, "queue", "queue.json")
 # Claude Code deletes transcripts once they pass cleanupPeriodDays (default 30),
 # so the live store is a rolling window, not an archive. Everything read is
 # merged into a durable file; segments that age off disk are kept and marked.
-REVIEWER_FIELDS = ("status", "summary", "classification")
+REVIEWER_FIELDS = ("status", "summary", "notes",
+                   "destination", "specification", "discretion", "stage", "outcome")
+
+# The rubric. Values a reviewer may assign, and — deliberately recorded — which
+# of them a machine can suggest versus which only a person can set.
+#
+# `specification` and `stage` are human-only on purpose. Stage was tested:
+# classifying how segments open by leading verb left 87% unclassifiable, so it
+# cannot be pattern-matched from prompt text and must not be faked.
+RUBRIC = OrderedDict([
+    ("destination", {
+        "values": ["instrumental", "authored-prose", "mixed"],
+        "means": "where the output lands: scaffolding, or text published under your name",
+        "assigned_by": "human, with a hint from file types touched",
+    }),
+    ("specification", {
+        "values": ["tight", "partial", "loose"],
+        "means": "how much of the decision space you pinned down before asking",
+        "assigned_by": "human only — the leverage hint is a weak proxy, not a score",
+    }),
+    ("discretion", {
+        "values": ["directed", "discretionary"],
+        "means": "did the agent stay inside the brief or go beyond it",
+        "assigned_by": "human",
+    }),
+    ("stage", {
+        "values": ["before", "during", "after"],
+        "means": "did the agent engage before, during, or after your own artifact existed",
+        "assigned_by": "human only — not derivable from transcripts",
+    }),
+    ("outcome", {
+        "values": ["accepted", "corrected", "reverted"],
+        "means": "what you did with what came back",
+        "assigned_by": "human only — lexical detection was tried and abandoned; "
+                       "substantive corrections read as plain assertions",
+    }),
+])
+
+# Blunt rejection cues only. This does NOT detect correction in general, and
+# the attempt to make it do so was abandoned rather than overfitted: the
+# clearest correction in this archive -- "we coded the 73 ourselves - so you
+# did retrieve that" -- is phrased as a statement of fact and matches nothing
+# lexical. Substantive corrections usually look like calm assertions.
+#
+# So `outcome` is a human-assigned field. This count is a pointer to segments
+# worth opening first, and a zero carries no information.
+PUSHBACK = re.compile(
+    r"^\W*(no\b|nope|actually|wait\b|not quite|incorrect|revert|undo|stop"
+    r"|instead|i disagree|that'?s (wrong|not right|backwards))",
+    re.I,
+)
+
+PROSE_EXT = {".md", ".markdown", ".txt", ".rst", ".tex", ".docx"}
+CODE_EXT = {".py", ".js", ".css", ".html", ".sh", ".sql", ".r", ".yml", ".yaml",
+            ".json", ".rb", ".do", ".sas", ".ipynb"}
 
 PROMPT_CAP = 2000  # keep the queue readable; one prompt in the wild hit 175k
 
@@ -238,14 +292,43 @@ class Segment(object):
                 ("files_touched", sorted(self.files)[:25]),
                 ("commits", self.commits),
                 ("risk", scan_risk(blob)),
+                # Machine signals. Deliberately separate from the reviewer's
+                # fields so nothing computed is mistaken for a judgment.
+                ("hints", self.hints()),
                 # For review only. Never copy this field to anything published.
                 ("prompts", prompts),
-                # Filled in by the reviewer.
+                # Filled in by the reviewer. Empty means not yet judged.
                 ("status", "pending"),
                 ("summary", ""),
-                ("classification", ""),
+                ("destination", ""),
+                ("specification", ""),
+                ("discretion", ""),
+                ("stage", ""),
+                ("outcome", ""),
+                ("notes", ""),
             ]
         )
+
+    def hints(self):
+        # Only files inside the repo are work product. Scratch files, Claude's
+        # own memory notes, and anything read out of ~/Downloads would otherwise
+        # show up as prose you authored.
+        owned = [f for f in self.files if not f.startswith("/")]
+        prose = sorted(f for f in owned if os.path.splitext(f)[1].lower() in PROSE_EXT)
+        code = sorted(f for f in owned if os.path.splitext(f)[1].lower() in CODE_EXT)
+        pushback = sum(1 for p in self.prompts if PUSHBACK.search(p.strip()[:200]))
+        return OrderedDict([
+            # Actions taken per instruction given. High values mean you said
+            # little and a lot happened -- a proxy for delegated latitude, not
+            # a measure of it.
+            ("leverage", round(sum(self.tools.values()) / max(len(self.prompts), 1), 1)),
+            ("pushback_turns", pushback),
+            ("pushback_recall", "blunt rejections only — a zero carries no information"),
+            ("prose_files", prose[:10]),
+            ("code_files", code[:10]),
+            ("external_files", len([f for f in self.files if f.startswith("/")])),
+            ("commits", len(self.commits)),
+        ])
 
 
 def build_segments(gap_minutes):
@@ -356,6 +439,7 @@ def main():
     payload = OrderedDict(
         [
             ("generated", dt.datetime.now().isoformat(timespec="seconds")),
+            ("rubric", RUBRIC),
             (
                 "coverage",
                 OrderedDict(
@@ -408,7 +492,18 @@ def main():
 
     print("\narchive: %d segments (%d new this run, %d aged off disk)" % (len(merged), added, gone))
     pending = sum(1 for r in merged if r.get("status") == "pending")
-    print("%d pending review" % pending)
+    print("%d pending review\n" % pending)
+
+    print("rubric coverage:")
+    for field in RUBRIC:
+        done = sum(1 for r in merged if r.get(field))
+        print("  %-14s %3d/%d marked   (%s)" % (
+            field, done, len(merged), RUBRIC[field]["assigned_by"].split(" —")[0]))
+
+    pushy = [r for r in merged if r["hints"]["pushback_turns"]]
+    prose = [r for r in merged if r["hints"]["prose_files"]]
+    print("\n%d segments show pushback turns (candidates for outcome=corrected)" % len(pushy))
+    print("%d segments touched prose files (candidates for destination review)" % len(prose))
     print("wrote %s (gitignored -- holds raw prompt text)" % os.path.relpath(QUEUE, REPO))
     return 0
 

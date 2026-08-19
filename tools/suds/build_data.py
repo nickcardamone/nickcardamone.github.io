@@ -60,17 +60,45 @@ VALIDITY_NAMES = {
     "CRITERION": "Criterion",
 }
 
-CONSTRUCT_BLURBS = {
-    "Use": "Quantity, frequency, and pattern of consumption.",
-    "Severity": "How entrenched the disorder is — dependence and problem severity.",
-    "Consequences": "Harms and negative outcomes that follow from use.",
-    "Withdrawal": "Symptoms experienced on cessation or reduction.",
-    "Urges": "Craving and momentary desire to use.",
-    "Expectancies": "What a person believes the substance will do for them.",
-    "Motives": "Reasons a person gives for using.",
-    "Self-Efficacy": "Confidence in the ability to abstain or cut back.",
-    "Recovery": "Progress, readiness, and change over the course of treatment.",
-}
+BLURB_SOURCE = os.path.join(HERE, "construct-blurbs.md")
+
+
+def load_blurbs():
+    """Read construct definitions, skipping anything still marked draft.
+
+    These are definitional claims published under Nick's name, so they are
+    gated on explicit approval rather than shipped by default: an entry only
+    renders once its status reads "yours". Drafts return no text and the site
+    shows no blurb at all, which is the honest fallback.
+    """
+    if not os.path.exists(BLURB_SOURCE):
+        return {}, 0
+
+    approved, drafts = {}, 0
+    name = status = None
+    body = []
+
+    def flush():
+        nonlocal drafts
+        if not name:
+            return
+        text = " ".join(" ".join(body).split())
+        if status == "yours" and text:
+            approved[name] = text
+        elif text:
+            drafts += 1
+
+    for raw in open(BLURB_SOURCE, encoding="utf-8"):
+        line = raw.rstrip()
+        if line.startswith("## "):
+            flush()
+            name, status, body = line[3:].strip(), None, []
+        elif name and line.lower().startswith("status:"):
+            status = line.split(":", 1)[1].strip().lower()
+        elif name and line and not line.startswith(("#", "-", "*", "**")):
+            body.append(line)
+    flush()
+    return approved, drafts
 
 
 def clean(value):
@@ -132,6 +160,8 @@ def build_measure(row):
 
 
 def main():
+    blurbs, drafts = load_blurbs()
+
     with open(SOURCE, newline="", encoding="utf-8-sig") as handle:
         rows = list(csv.DictReader(handle))
 
@@ -162,7 +192,7 @@ def main():
                 OrderedDict(
                     [
                         ("name", construct),
-                        ("blurb", CONSTRUCT_BLURBS.get(construct, "")),
+                        ("blurb", blurbs.get(construct, "")),
                         ("count", len(measures)),
                         ("measures", measures),
                     ]
@@ -216,6 +246,13 @@ def main():
         handle.write("\n")
 
     print("wrote %s" % os.path.relpath(TARGET, REPO))
+    if drafts:
+        print(
+            "  %d construct definition(s) withheld as draft — edit %s"
+            % (drafts, os.path.relpath(BLURB_SOURCE, REPO))
+        )
+    if blurbs:
+        print("  %d construct definition(s) published" % len(blurbs))
     print(
         "  %d measures across %d substances / %d construct groups"
         % (

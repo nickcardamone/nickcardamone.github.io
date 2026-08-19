@@ -34,7 +34,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "blurb": "",
      "count": 8,
      "measures": [
       {
@@ -247,7 +247,7 @@
     },
     {
      "name": "Severity",
-     "blurb": "How entrenched the disorder is — dependence and problem severity.",
+     "blurb": "",
      "count": 3,
      "measures": [
       {
@@ -328,7 +328,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "Symptoms experienced on cessation or reduction.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -359,7 +359,7 @@
     },
     {
      "name": "Urges",
-     "blurb": "Craving and momentary desire to use.",
+     "blurb": "",
      "count": 3,
      "measures": [
       {
@@ -442,7 +442,7 @@
     },
     {
      "name": "Expectancies",
-     "blurb": "What a person believes the substance will do for them.",
+     "blurb": "",
      "count": 4,
      "measures": [
       {
@@ -551,7 +551,7 @@
     },
     {
      "name": "Motives",
-     "blurb": "Reasons a person gives for using.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -582,7 +582,7 @@
     },
     {
      "name": "Self-Efficacy",
-     "blurb": "Confidence in the ability to abstain or cut back.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -620,7 +620,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "blurb": "",
      "count": 2,
      "measures": [
       {
@@ -679,7 +679,7 @@
     },
     {
      "name": "Severity",
-     "blurb": "How entrenched the disorder is — dependence and problem severity.",
+     "blurb": "",
      "count": 8,
      "measures": [
       {
@@ -893,7 +893,7 @@
     },
     {
      "name": "Consequences",
-     "blurb": "Harms and negative outcomes that follow from use.",
+     "blurb": "",
      "count": 3,
      "measures": [
       {
@@ -978,7 +978,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "Symptoms experienced on cessation or reduction.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1011,7 +1011,7 @@
     },
     {
      "name": "Self-Efficacy",
-     "blurb": "Confidence in the ability to abstain or cut back.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1042,7 +1042,7 @@
     },
     {
      "name": "Recovery",
-     "blurb": "Progress, readiness, and change over the course of treatment.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1081,7 +1081,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "blurb": "",
      "count": 2,
      "measures": [
       {
@@ -1142,7 +1142,7 @@
     },
     {
      "name": "Consequences",
-     "blurb": "Harms and negative outcomes that follow from use.",
+     "blurb": "",
      "count": 2,
      "measures": [
       {
@@ -1200,7 +1200,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "Symptoms experienced on cessation or reduction.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1232,7 +1232,7 @@
     },
     {
      "name": "Motives",
-     "blurb": "Reasons a person gives for using.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1270,7 +1270,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "blurb": "",
      "count": 3,
      "measures": [
       {
@@ -1355,7 +1355,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "Symptoms experienced on cessation or reduction.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1392,7 +1392,7 @@
    "constructs": [
     {
      "name": "Withdrawal",
-     "blurb": "Symptoms experienced on cessation or reduction.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1425,7 +1425,7 @@
     },
     {
      "name": "Urges",
-     "blurb": "Craving and momentary desire to use.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1464,7 +1464,7 @@
    "constructs": [
     {
      "name": "Withdrawal",
-     "blurb": "Symptoms experienced on cessation or reduction.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1502,7 +1502,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "blurb": "",
      "count": 6,
      "measures": [
       {
@@ -1661,7 +1661,7 @@
     },
     {
      "name": "Severity",
-     "blurb": "How entrenched the disorder is — dependence and problem severity.",
+     "blurb": "",
      "count": 4,
      "measures": [
       {
@@ -1770,7 +1770,7 @@
     },
     {
      "name": "Consequences",
-     "blurb": "Harms and negative outcomes that follow from use.",
+     "blurb": "",
      "count": 2,
      "measures": [
       {
@@ -1829,7 +1829,7 @@
     },
     {
      "name": "Self-Efficacy",
-     "blurb": "Confidence in the ability to abstain or cut back.",
+     "blurb": "",
      "count": 2,
      "measures": [
       {
@@ -1887,7 +1887,7 @@
     },
     {
      "name": "Recovery",
-     "blurb": "Progress, readiness, and change over the course of treatment.",
+     "blurb": "",
      "count": 2,
      "measures": [
       {
@@ -1952,7 +1952,7 @@
    "constructs": [
     {
      "name": "Self-Efficacy",
-     "blurb": "Confidence in the ability to abstain or cut back.",
+     "blurb": "",
      "count": 1,
      "measures": [
       {
@@ -1984,7 +1984,7 @@
     },
     {
      "name": "Recovery",
-     "blurb": "Progress, readiness, and change over the course of treatment.",
+     "blurb": "",
      "count": 6,
      "measures": [
       {
