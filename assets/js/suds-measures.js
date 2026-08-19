@@ -458,7 +458,10 @@
 
   function frame(now) {
     requestAnimationFrame(frame);
+    render(now);
+  }
 
+  function render(now) {
     var t = now / 1000;
     var animating = zoomInterp !== null;
 
@@ -897,6 +900,10 @@
     });
 
     window.addEventListener("resize", resize);
+
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) needsRender = true;
+    });
   }
 
   /* ------------------------------------------------------------------ *
@@ -943,6 +950,9 @@
       itemsRange.value = max;
       itemsOut.textContent = "any";
 
+      // Paint once synchronously: rAF never fires while the tab is in the
+      // background, which would otherwise leave the figure blank on load.
+      render(performance.now());
       requestAnimationFrame(frame);
       figure.style.opacity = 1;
     })
