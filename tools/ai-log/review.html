@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI use log — review</title>
+<style>
+  :root {
+    --ink:#2c2926; --muted:#736c66; --faint:#a49c95; --rule:#e2dbd4;
+    --bg:#f7f4f0; --panel:#fff; --accent:#83453e; --warn:#8a5a1a; --warnbg:#fdf3e2;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; height:100vh; display:flex; flex-direction:column;
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink); background:var(--bg);
+  }
+  header {
+    display:flex; align-items:center; gap:1rem; flex-wrap:wrap;
+    padding:.6rem 1rem; background:var(--panel); border-bottom:1px solid var(--rule);
+  }
+  header h1 { margin:0; font-size:.95rem; font-weight:700; }
+  .local {
+    padding:.15rem .5rem; font-size:.7rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--warn); background:var(--warnbg);
+    border:1px solid #f0dcbb; border-radius:999px;
+  }
+  .progress { margin-left:auto; font-variant-numeric:tabular-nums; color:var(--muted); }
+  .filters { display:flex; gap:.3rem; }
+  .filters button, .bar button {
+    padding:.2rem .6rem; font:inherit; font-size:.82rem; color:var(--muted);
+    background:var(--bg); border:1px solid var(--rule); border-radius:999px; cursor:pointer;
+  }
+  .filters button[aria-pressed=true] { color:#fff; background:var(--accent); border-color:var(--accent); }
+
+  main { flex:1; display:grid; grid-template-columns:19rem minmax(0,1fr); min-height:0; }
+
+  /* list */
+  #list { overflow-y:auto; border-right:1px solid var(--rule); background:var(--panel); }
+  .row {
+    padding:.5rem .8rem; border-bottom:1px solid var(--rule); cursor:pointer;
+    display:grid; grid-template-columns:auto 1fr auto; gap:.15rem .5rem; align-items:baseline;
+  }
+  .row:hover { background:var(--bg); }
+  .row[aria-selected=true] { background:#f3ebe9; box-shadow:inset 3px 0 0 var(--accent); }
+  .row .when { font-size:.72rem; color:var(--faint); font-variant-numeric:tabular-nums; }
+  .row .proj { font-size:.82rem; font-weight:600; grid-column:2; }
+  .row .meta { grid-column:2/4; font-size:.72rem; color:var(--faint); }
+  .dot { width:8px; height:8px; border-radius:50%; background:var(--rule); }
+  .dot.approved { background:#4a8a5c; }
+  .dot.rejected { background:#b0524a; }
+  .dot.partial  { background:#d0a23c; }
+
+  /* detail */
+  #detail { overflow-y:auto; padding:1.2rem 1.5rem 1rem; }
+  .empty { color:var(--faint); padding:3rem 0; text-align:center; }
+  h2 { margin:0 0 .2rem; font-size:1.1rem; }
+  .sub { margin:0 0 1rem; color:var(--muted); font-size:.85rem; }
+  .chips { display:flex; flex-wrap:wrap; gap:.3rem; margin-bottom:1rem; }
+  .chip {
+    padding:.15rem .5rem; font-size:.72rem; border-radius:999px;
+    background:var(--panel); border:1px solid var(--rule); color:var(--muted);
+  }
+  .chip.risk { color:var(--warn); background:var(--warnbg); border-color:#f0dcbb; }
+  .chip.hi { color:#fff; background:var(--accent); border-color:var(--accent); }
+
+  section { margin-bottom:1.3rem; }
+  section > h3 {
+    margin:0 0 .45rem; font-size:.68rem; font-weight:700; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint);
+  }
+  .prompts { background:var(--panel); border:1px solid var(--rule); border-radius:8px; }
+  .prompt {
+    padding:.6rem .8rem; border-bottom:1px solid var(--rule);
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.8rem;
+    white-space:pre-wrap; word-break:break-word; max-height:16rem; overflow-y:auto;
+  }
+  .prompt:last-child { border-bottom:0; }
+  .prompt .n { color:var(--faint); user-select:none; }
+
+  .dims { display:grid; gap:.5rem; }
+  .dim { display:grid; grid-template-columns:8.5rem 1fr; gap:.6rem; align-items:start; }
+  .dim > label { font-size:.8rem; color:var(--muted); padding-top:.25rem; }
+  .dim .opts { display:flex; flex-wrap:wrap; gap:.3rem; }
+  .opt {
+    padding:.22rem .65rem; font:inherit; font-size:.8rem; cursor:pointer;
+    color:var(--muted); background:var(--panel);
+    border:1px solid var(--rule); border-radius:999px;
+  }
+  .opt:hover { border-color:var(--faint); }
+  .opt[aria-pressed=true] { color:#fff; background:var(--accent); border-color:var(--accent); }
+  .dim .who { grid-column:2; font-size:.7rem; color:var(--faint); }
+
+  textarea {
+    width:100%; padding:.5rem .7rem; font:inherit; font-size:.85rem; color:var(--ink);
+    background:var(--panel); border:1px solid var(--rule); border-radius:8px; resize:vertical;
+  }
+  textarea:focus { outline:none; border-color:var(--accent); }
+
+  .bar {
+    position:sticky; bottom:0; z-index:2; display:flex; gap:.4rem;
+    align-items:center; flex-wrap:wrap;
+    /* solid, not a gradient: it sits over the rubric rows while scrolling */
+    padding:.7rem 0; margin-top:1rem;
+    background:var(--bg); border-top:1px solid var(--rule);
+  }
+  .bar .save { margin-left:auto; font-size:.75rem; color:var(--faint); }
+  .bar .approve[aria-pressed=true] { color:#fff; background:#4a8a5c; border-color:#4a8a5c; }
+  .bar .reject[aria-pressed=true]  { color:#fff; background:#b0524a; border-color:#b0524a; }
+  kbd {
+    padding:.05rem .3rem; font:inherit; font-size:.7rem; color:var(--muted);
+    background:var(--bg); border:1px solid var(--rule); border-radius:4px;
+  }
+
+  /* narrow window or split view: stack the list over the detail, and let each
+     rubric row use the full width instead of squeezing beside its label */
+  @media (max-width:900px) {
+    .dim { grid-template-columns:1fr; gap:.2rem; }
+    .dim .who { grid-column:1; }
+  }
+  @media (max-width:700px) {
+    main { grid-template-columns:1fr; grid-template-rows:14rem minmax(0,1fr); }
+    #list { border-right:0; border-bottom:1px solid var(--rule); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI use log — review</h1>
+  <span class="local">local only · raw prompts · nothing here publishes</span>
+  <div class="filters" id="filters">
+    <button data-filter="pending" aria-pressed="true">Pending</button>
+    <button data-filter="flagged" aria-pressed="false">Risk-flagged</button>
+    <button data-filter="prose" aria-pressed="false">Touched prose</button>
+    <button data-filter="all" aria-pressed="false">All</button>
+  </div>
+  <div class="progress" id="progress">—</div>
+</header>
+
+<main>
+  <div id="list"></div>
+  <div id="detail"><p class="empty">Select a segment. <kbd>j</kbd>/<kbd>k</kbd> to move.</p></div>
+</main>
+
+<script>
+const DIMS = [
+  ["destination",   ["instrumental","authored-prose","mixed"]],
+  ["specification", ["tight","partial","loose"]],
+  ["discretion",    ["directed","discretionary"]],
+  ["stage",         ["before","during","after"]],
+  ["outcome",       ["accepted","corrected","reverted"]],
+];
+
+let data = null, rubric = {}, filter = "pending", visible = [], cursor = 0, saveTimer = null;
+// Held across re-renders: a failed write must stay on screen, not flash past.
+let lastSave = "";
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+async function boot() {
+  const res = await fetch("/api/queue");
+  data = await res.json();
+  rubric = data.rubric || {};
+  render();
+}
+
+function marked(seg) { return DIMS.filter(([k]) => seg[k]).length; }
+
+function applyFilter() {
+  const all = data.segments;
+  visible =
+    filter === "all"     ? all :
+    filter === "flagged" ? all.filter(s => Object.keys(s.risk || {}).length) :
+    filter === "prose"   ? all.filter(s => (s.hints?.prose_files || []).length) :
+                           all.filter(s => s.status === "pending");
+  if (cursor >= visible.length) cursor = Math.max(0, visible.length - 1);
+}
+
+function render() {
+  applyFilter();
+  const done = data.segments.filter(s => s.status !== "pending").length;
+  const fully = data.segments.filter(s => marked(s) === DIMS.length).length;
+  $("#progress").textContent =
+    `${done}/${data.segments.length} reviewed · ${fully} fully marked · ${visible.length} shown`;
+
+  $("#list").innerHTML = visible.map((s, i) => {
+    const n = marked(s);
+    const cls = s.status === "approved" ? "approved" : s.status === "rejected" ? "rejected"
+              : n ? "partial" : "";
+    const risk = Object.keys(s.risk || {}).join(", ");
+    return `<div class="row" role="option" aria-selected="${i === cursor}" data-i="${i}">
+      <span class="dot ${cls}"></span>
+      <span class="proj">${esc(s.project)}</span>
+      <span class="when">${esc((s.started || "").slice(0, 16).replace("T", " "))}</span>
+      <span class="meta">${s.prompt_count}p · ${s.tool_calls}t · ${n}/5 marked${risk ? " · " + esc(risk) : ""}</span>
+    </div>`;
+  }).join("") || `<p class="empty">Nothing matches this filter.</p>`;
+
+  renderDetail();
+  const sel = $("#list .row[aria-selected=true]");
+  if (sel) sel.scrollIntoView({ block: "nearest" });
+}
+
+function renderDetail() {
+  const s = visible[cursor];
+  if (!s) { $("#detail").innerHTML = `<p class="empty">Nothing selected.</p>`; return; }
+  const h = s.hints || {};
+
+  const chips = [
+    `<span class="chip">${esc(s.boundary)}</span>`,
+    `<span class="chip">${s.prompt_count} prompts · ${s.tool_calls} tools · ${s.duration_min}m</span>`,
+    `<span class="chip${h.leverage >= 10 ? " hi" : ""}">leverage ${h.leverage}×</span>`,
+    s.on_disk === false ? `<span class="chip risk">transcript aged off disk</span>` : "",
+    (h.prose_files || []).length ? `<span class="chip risk">prose: ${h.prose_files.map(esc).join(", ")}</span>` : "",
+    h.pushback_turns ? `<span class="chip">${h.pushback_turns} pushback</span>` : "",
+    h.commits ? `<span class="chip">${h.commits} commits</span>` : "",
+    ...Object.entries(s.risk || {}).map(([k, v]) => `<span class="chip risk">${esc(k)} ×${v}</span>`),
+  ].filter(Boolean).join("");
+
+  const dims = DIMS.map(([key, opts]) => `
+    <div class="dim">
+      <label>${key}</label>
+      <div class="opts">
+        ${opts.map(o => `<button class="opt" data-dim="${key}" data-val="${o}"
+            aria-pressed="${s[key] === o}">${esc(o)}</button>`).join("")}
+        <button class="opt" data-dim="${key}" data-val="" aria-pressed="${!s[key]}">—</button>
+      </div>
+      <span class="who">${esc((rubric[key] || {}).assigned_by || "")}</span>
+    </div>`).join("");
+
+  $("#detail").innerHTML = `
+    <h2>${esc(s.project)}</h2>
+    <p class="sub">${esc(s.id)} · ${esc((s.started || "").replace("T", " "))}${
+      h.code_files?.length ? " · " + esc(h.code_files.slice(0, 4).join(", ")) : ""}</p>
+    <div class="chips">${chips}</div>
+
+    <section>
+      <h3>What you typed</h3>
+      <div class="prompts">${s.prompts.map((p, i) =>
+        `<div class="prompt"><span class="n">${i + 1}. </span>${esc(p)}</div>`).join("")}</div>
+    </section>
+
+    <section><h3>Rubric</h3><div class="dims">${dims}</div></section>
+
+    <section>
+      <h3>Summary — publishable, written by you</h3>
+      <textarea id="summary" rows="2" placeholder="What was this task?">${esc(s.summary)}</textarea>
+    </section>
+
+    <section>
+      <h3>Notes — private</h3>
+      <textarea id="notes" rows="2" placeholder="Anything to remember about this one">${esc(s.notes)}</textarea>
+    </section>
+
+    <div class="bar">
+      <button class="approve" data-status="approved" aria-pressed="${s.status === "approved"}">Approve</button>
+      <button class="reject"  data-status="rejected" aria-pressed="${s.status === "rejected"}">Reject</button>
+      <button data-status="pending" aria-pressed="${s.status === "pending"}">Pending</button>
+      <span class="save" id="save">${lastSave || `${marked(s)}/5 marked · <kbd>j</kbd>/<kbd>k</kbd> move · <kbd>a</kbd> approve`}</span>
+    </div>`;
+}
+
+async function patch(fields) {
+  const s = visible[cursor];
+  if (!s) return;
+  Object.assign(s, fields);
+  let res;
+  try {
+    res = await fetch("/api/segment/" + encodeURIComponent(s.id), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(fields),
+    });
+  } catch (err) {
+    // Server stopped mid-review: the edit is only in memory now.
+    lastSave = "SAVE FAILED — server unreachable, changes not on disk";
+    const note = $("#save");
+    if (note) note.textContent = lastSave;
+    return;
+  }
+  lastSave = res.ok ? "" : "SAVE FAILED — " + ((await res.json()).error || res.status);
+  const note = $("#save");
+  if (note && lastSave) note.textContent = lastSave;
+}
+
+document.addEventListener("click", e => {
+  const row = e.target.closest("#list .row");
+  if (row) { cursor = +row.dataset.i; render(); return; }
+
+  const opt = e.target.closest(".opt");
+  if (opt) {
+    patch({ [opt.dataset.dim]: opt.dataset.val }).then(render);
+    return;
+  }
+  const st = e.target.closest("[data-status]");
+  if (st) patch({ status: st.dataset.status }).then(render);
+});
+
+document.addEventListener("input", e => {
+  if (e.target.id !== "summary" && e.target.id !== "notes") return;
+  clearTimeout(saveTimer);
+  const field = e.target.id, value = e.target.value;
+  saveTimer = setTimeout(() => patch({ [field]: value }), 500);
+});
+
+document.addEventListener("keydown", e => {
+  if (/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+  if (e.key === "j" || e.key === "ArrowDown") { cursor = Math.min(cursor + 1, visible.length - 1); render(); }
+  else if (e.key === "k" || e.key === "ArrowUp") { cursor = Math.max(cursor - 1, 0); render(); }
+  else if (e.key === "a") patch({ status: "approved" }).then(render);
+  else if (e.key === "x") patch({ status: "rejected" }).then(render);
+  else if (e.key === "p") patch({ status: "pending" }).then(render);
+});
+
+$("#filters").addEventListener("click", e => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  filter = b.dataset.filter; cursor = 0;
+  [...$("#filters").children].forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+
+boot();
+</script>
+</body>
+</html>
