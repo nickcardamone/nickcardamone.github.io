@@ -14,4 +14,4 @@ In 2022, I co-authored a manuscript with faculty from the Perelamn School of Med
 
 [Link to publication in *Drug and Alcohol Dependence*](https://pubmed.ncbi.nlm.nih.gov/36535096/)
 
-Visit the [R shiny app](https://ncardamo.shinyapps.io/mySUDSmeasures/) which compiles all of the substance use disorder treatment instruments we screened in our review.
+Browse the [interactive measures repository]({{ '/suds-measures' | relative_url }}), which organizes the included measures by substance and by the construct each one assesses.

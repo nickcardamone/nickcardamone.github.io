@@ -62,6 +62,12 @@ VALIDITY_NAMES = {
 
 BLURB_SOURCE = os.path.join(HERE, "construct-blurbs.md")
 
+# Figures as published in Stewart et al. (2023). The site cites the paper, so
+# the paper's numbers are the ones of record. The working CSV has drifted from
+# them slightly in the excluded pile; the build reports that rather than
+# silently publishing a figure that contradicts the peer-reviewed record.
+PUBLISHED = {"screened": 411, "included": 73}
+
 
 def load_blurbs():
     """Read construct definitions, skipping anything still marked draft.
@@ -80,7 +86,9 @@ def load_blurbs():
 
     def flush():
         nonlocal drafts
-        if not name:
+        # A heading with no status line is prose in the document (the source
+        # note), not a construct entry.
+        if not name or status is None:
             return
         text = " ".join(" ".join(body).split())
         if status == "yours" and text:
@@ -220,9 +228,11 @@ def main():
                 OrderedDict(
                     [
                         ("searched", "Summer–Fall 2021"),
-                        ("screened", len(included) + len(excluded)),
-                        ("included", len(included)),
-                        ("excluded", len(excluded)),
+                        ("screened", PUBLISHED["screened"]),
+                        ("included", PUBLISHED["included"]),
+                        ("excluded", PUBLISHED["screened"] - PUBLISHED["included"]),
+                        ("figuresFrom", "Stewart et al. (2023), doi:10.1016/j.drugalcdep.2022.109729"),
+                        ("screenedInWorkingFile", len(included) + len(excluded)),
                         (
                             "exclusionReasons",
                             OrderedDict(
@@ -246,6 +256,14 @@ def main():
         handle.write("\n")
 
     print("wrote %s" % os.path.relpath(TARGET, REPO))
+
+    derived = len(included) + len(excluded)
+    if derived != PUBLISHED["screened"] or len(included) != PUBLISHED["included"]:
+        print(
+            "  NOTE: working file has %d screened / %d included; the paper reports "
+            "%d / %d. The site shows the published figures."
+            % (derived, len(included), PUBLISHED["screened"], PUBLISHED["included"])
+        )
     if drafts:
         print(
             "  %d construct definition(s) withheld as draft — edit %s"

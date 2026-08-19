@@ -1,9 +1,11 @@
 {
  "meta": {
   "searched": "Summer–Fall 2021",
-  "screened": 418,
+  "screened": 411,
   "included": 73,
-  "excluded": 345,
+  "excluded": 338,
+  "figuresFrom": "Stewart et al. (2023), doi:10.1016/j.drugalcdep.2022.109729",
+  "screenedInWorkingFile": 418,
   "exclusionReasons": {
    "Too many items": 155,
    "Not found": 118,
@@ -34,7 +36,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "",
+     "blurb": "Identifies, screens, or indicates clinically significant substance use problems; typically administered upon entering treatment and has a discrete outcome (e.g., cut-off scores separating those with and without clinically significant substance use disorder).",
      "count": 8,
      "measures": [
       {
@@ -247,7 +249,7 @@
     },
     {
      "name": "Severity",
-     "blurb": "",
+     "blurb": "Measures degree of drug or alcohol use disorder, typically with a continuous scale.",
      "count": 3,
      "measures": [
       {
@@ -328,7 +330,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "",
+     "blurb": "Evaluates physical withdrawal symptoms attributed to substance use cessation.",
      "count": 1,
      "measures": [
       {
@@ -359,7 +361,7 @@
     },
     {
      "name": "Urges",
-     "blurb": "",
+     "blurb": "Evaluates psychological withdrawal symptoms, inclinations, or feelings that may be felt in the absence of physical withdrawal symptoms.",
      "count": 3,
      "measures": [
       {
@@ -442,7 +444,7 @@
     },
     {
      "name": "Expectancies",
-     "blurb": "",
+     "blurb": "The beliefs regarding the positive and negative behavioral, cognitive, and emotional effects of a substance (Cooper et al., 2016).",
      "count": 4,
      "measures": [
       {
@@ -551,7 +553,7 @@
     },
     {
      "name": "Motives",
-     "blurb": "",
+     "blurb": "The use of a given substance in order to achieve a desired effect or outcome (Cooper et al., 2016).",
      "count": 1,
      "measures": [
       {
@@ -582,7 +584,7 @@
     },
     {
      "name": "Self-Efficacy",
-     "blurb": "",
+     "blurb": "The belief that one has the ability to implement the behaviors to produce a desired effect (Kadden and Litt, 2011).",
      "count": 1,
      "measures": [
       {
@@ -620,7 +622,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "",
+     "blurb": "Identifies, screens, or indicates clinically significant substance use problems; typically administered upon entering treatment and has a discrete outcome (e.g., cut-off scores separating those with and without clinically significant substance use disorder).",
      "count": 2,
      "measures": [
       {
@@ -679,7 +681,7 @@
     },
     {
      "name": "Severity",
-     "blurb": "",
+     "blurb": "Measures degree of drug or alcohol use disorder, typically with a continuous scale.",
      "count": 8,
      "measures": [
       {
@@ -893,7 +895,7 @@
     },
     {
      "name": "Consequences",
-     "blurb": "",
+     "blurb": "Measures problems, dysfunctions, and negative life outcomes (e.g., social, emotional, physical) related to substance use.",
      "count": 3,
      "measures": [
       {
@@ -978,7 +980,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "",
+     "blurb": "Evaluates physical withdrawal symptoms attributed to substance use cessation.",
      "count": 1,
      "measures": [
       {
@@ -1011,7 +1013,7 @@
     },
     {
      "name": "Self-Efficacy",
-     "blurb": "",
+     "blurb": "The belief that one has the ability to implement the behaviors to produce a desired effect (Kadden and Litt, 2011).",
      "count": 1,
      "measures": [
       {
@@ -1042,7 +1044,7 @@
     },
     {
      "name": "Recovery",
-     "blurb": "",
+     "blurb": "Assess a patient's desire for behavior change, engagement with treatment or abstinence, as well as cognitions, attitudes, and beliefs related to recovery.",
      "count": 1,
      "measures": [
       {
@@ -1081,7 +1083,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "",
+     "blurb": "Identifies, screens, or indicates clinically significant substance use problems; typically administered upon entering treatment and has a discrete outcome (e.g., cut-off scores separating those with and without clinically significant substance use disorder).",
      "count": 2,
      "measures": [
       {
@@ -1142,7 +1144,7 @@
     },
     {
      "name": "Consequences",
-     "blurb": "",
+     "blurb": "Measures problems, dysfunctions, and negative life outcomes (e.g., social, emotional, physical) related to substance use.",
      "count": 2,
      "measures": [
       {
@@ -1200,7 +1202,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "",
+     "blurb": "Evaluates physical withdrawal symptoms attributed to substance use cessation.",
      "count": 1,
      "measures": [
       {
@@ -1232,7 +1234,7 @@
     },
     {
      "name": "Motives",
-     "blurb": "",
+     "blurb": "The use of a given substance in order to achieve a desired effect or outcome (Cooper et al., 2016).",
      "count": 1,
      "measures": [
       {
@@ -1270,7 +1272,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "",
+     "blurb": "Identifies, screens, or indicates clinically significant substance use problems; typically administered upon entering treatment and has a discrete outcome (e.g., cut-off scores separating those with and without clinically significant substance use disorder).",
      "count": 3,
      "measures": [
       {
@@ -1355,7 +1357,7 @@
     },
     {
      "name": "Withdrawal",
-     "blurb": "",
+     "blurb": "Evaluates physical withdrawal symptoms attributed to substance use cessation.",
      "count": 1,
      "measures": [
       {
@@ -1392,7 +1394,7 @@
    "constructs": [
     {
      "name": "Withdrawal",
-     "blurb": "",
+     "blurb": "Evaluates physical withdrawal symptoms attributed to substance use cessation.",
      "count": 1,
      "measures": [
       {
@@ -1425,7 +1427,7 @@
     },
     {
      "name": "Urges",
-     "blurb": "",
+     "blurb": "Evaluates psychological withdrawal symptoms, inclinations, or feelings that may be felt in the absence of physical withdrawal symptoms.",
      "count": 1,
      "measures": [
       {
@@ -1464,7 +1466,7 @@
    "constructs": [
     {
      "name": "Withdrawal",
-     "blurb": "",
+     "blurb": "Evaluates physical withdrawal symptoms attributed to substance use cessation.",
      "count": 1,
      "measures": [
       {
@@ -1502,7 +1504,7 @@
    "constructs": [
     {
      "name": "Use",
-     "blurb": "",
+     "blurb": "Identifies, screens, or indicates clinically significant substance use problems; typically administered upon entering treatment and has a discrete outcome (e.g., cut-off scores separating those with and without clinically significant substance use disorder).",
      "count": 6,
      "measures": [
       {
@@ -1661,7 +1663,7 @@
     },
     {
      "name": "Severity",
-     "blurb": "",
+     "blurb": "Measures degree of drug or alcohol use disorder, typically with a continuous scale.",
      "count": 4,
      "measures": [
       {
@@ -1770,7 +1772,7 @@
     },
     {
      "name": "Consequences",
-     "blurb": "",
+     "blurb": "Measures problems, dysfunctions, and negative life outcomes (e.g., social, emotional, physical) related to substance use.",
      "count": 2,
      "measures": [
       {
@@ -1829,7 +1831,7 @@
     },
     {
      "name": "Self-Efficacy",
-     "blurb": "",
+     "blurb": "The belief that one has the ability to implement the behaviors to produce a desired effect (Kadden and Litt, 2011).",
      "count": 2,
      "measures": [
       {
@@ -1887,7 +1889,7 @@
     },
     {
      "name": "Recovery",
-     "blurb": "",
+     "blurb": "Assess a patient's desire for behavior change, engagement with treatment or abstinence, as well as cognitions, attitudes, and beliefs related to recovery.",
      "count": 2,
      "measures": [
       {
@@ -1952,7 +1954,7 @@
    "constructs": [
     {
      "name": "Self-Efficacy",
-     "blurb": "",
+     "blurb": "The belief that one has the ability to implement the behaviors to produce a desired effect (Kadden and Litt, 2011).",
      "count": 1,
      "measures": [
       {
@@ -1984,7 +1986,7 @@
     },
     {
      "name": "Recovery",
-     "blurb": "",
+     "blurb": "Assess a patient's desire for behavior change, engagement with treatment or abstinence, as well as cognitions, attitudes, and beliefs related to recovery.",
      "count": 6,
      "measures": [
       {

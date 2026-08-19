@@ -17,3 +17,6 @@ beautiful-jekyll-theme-*.gem
 
 # AI use log — holds raw prompt text, never commit
 tools/ai-log/queue/
+
+# publisher PDFs — copyrighted, do not publish from this repo
+1-s2.0-*.pdf
