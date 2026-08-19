@@ -1,0 +1,2150 @@
+{
+ "meta": {
+  "searched": "Summer–Fall 2021",
+  "screened": 418,
+  "included": 73,
+  "excluded": 345,
+  "exclusionReasons": {
+   "Too many items": 155,
+   "Not found": 118,
+   "No scoring/instructions/interpretation": 42,
+   "Copyright": 11,
+   "Measure was replaced with new version": 6,
+   "Insufficient psychometric data": 6,
+   "Cost": 5,
+   "Unable to verify original source": 1,
+   "Not accessible in print-ready format": 1
+  },
+  "constructOrder": [
+   "Use",
+   "Severity",
+   "Consequences",
+   "Withdrawal",
+   "Urges",
+   "Expectancies",
+   "Motives",
+   "Self-Efficacy",
+   "Recovery"
+  ]
+ },
+ "substances": [
+  {
+   "name": "Alcohol",
+   "count": 21,
+   "constructs": [
+    {
+     "name": "Use",
+     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "count": 8,
+     "measures": [
+      {
+       "abbr": "AUDIT-C",
+       "name": "Alcohol Use Disorders Identification Test - Consumption",
+       "items": 3,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.hepatitis.va.gov/alcohol/treatment/audit-c.asp#S1X",
+       "scholar": "https://scholar.google.com/scholar?q=%22Alcohol+Use+Disorders+Identification+Test+-+Consumption%22",
+       "source": "Bush et al., 1998",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Convergent",
+         "Discriminant",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "CAGE",
+       "name": "Cut down, Annoyed, Guilt, Eye-opener Screening Tool",
+       "items": 4,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.hopkinsmedicine.org/johns_hopkins_healthcare/downloads/all_plans/CAGE%20Substance%20Screening%20Tool.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Cut+down%2C+Annoyed%2C+Guilt%2C+Eye-opener+Screening+Tool%22",
+       "source": "Mayfield, 1974",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "AUDIT",
+       "name": "Alcohol Use Disorders Identification Test",
+       "items": 10,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://auditscreen.org/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Alcohol+Use+Disorders+Identification+Test%22",
+       "source": "Saunders et al., 1993",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Discriminant",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "MAST",
+       "name": "Michigan Alcohol Screening Test",
+       "items": 25,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://americanaddictioncenters.org/alcoholism-treatment/mast-alcohol-assessment-test",
+       "scholar": "https://scholar.google.com/scholar?q=%22Michigan+Alcohol+Screening+Test%22",
+       "source": "Selzer, 1971",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "FAST",
+       "name": "Fast Alcohol Screening Test",
+       "items": 4,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.mandevillesurgery.co.uk/wp-content/uploads/2019/12/Fast-Alcohol-Screening-Test.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Fast+Alcohol+Screening+Test%22",
+       "source": "Hodgson et al., 2002",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Discriminant",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "BMAST",
+       "name": "Brief Michigan Alcohol Screening Test",
+       "items": 10,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://preventionforme.org/wp-content/uploads/2017/09/BriefMAST.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Brief+Michigan+Alcohol+Screening+Test%22",
+       "source": "Pokorny et al., 1972",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "SMAST",
+       "name": "Short Michigan Alcohol Screening Test",
+       "items": 10,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://hopequestgroup.org/wp-content/uploads/2011/09/SMAST-Short-Michigan-Alcohol-Screening-Test.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Short+Michigan+Alcohol+Screening+Test%22",
+       "source": "Selzer et al., 1975",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant",
+         "Discrim"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "CAGE-AID",
+       "name": "CAGE-Adapted to Include Drugs",
+       "items": 4,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.hiv.uw.edu/page/substance-use/cage-aid",
+       "scholar": "https://scholar.google.com/scholar?q=%22CAGE-Adapted+to+Include+Drugs%22",
+       "source": "Brown & Rounds, 1995",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Good",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Severity",
+     "blurb": "How entrenched the disorder is — dependence and problem severity.",
+     "count": 3,
+     "measures": [
+      {
+       "abbr": "SADD",
+       "name": "Short Alcohol Dependence Data Questionnaire",
+       "items": 15,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://hams.cc/app2/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Short+Alcohol+Dependence+Data+Questionnaire%22",
+       "source": "Raistrick et al., 1983",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Discrim"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "SADQ",
+       "name": "Severity of Alcohol Dependence Questionnaire",
+       "items": 20,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.smartcjs.org.uk/wp-content/uploads/2015/07/SADQ.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Severity+of+Alcohol+Dependence+Questionnaire%22",
+       "source": "Stockwell et al., 1983",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Adequate",
+        "validity": [
+         "Concurrent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "SADQ-C",
+       "name": "Severity of Alcohol Dependence Questionnaire - Community Samples",
+       "items": 20,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.smartcjs.org.uk/wp-content/uploads/2015/07/SADQ.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Severity+of+Alcohol+Dependence+Questionnaire+-+Community+Samples%22",
+       "source": "Stockwell et al., 1994",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Withdrawal",
+     "blurb": "Symptoms experienced on cessation or reduction.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "SAWS",
+       "name": "Short Alcohol Withdrawal Scale",
+       "items": 10,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Withdrawal"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://doctorfrenz.com/wp-content/uploads/2017/09/short_alcohol_withdrawal_scale.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Short+Alcohol+Withdrawal+Scale%22",
+       "source": "Gossop et al., 2002",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Urges",
+     "blurb": "Craving and momentary desire to use.",
+     "count": 3,
+     "measures": [
+      {
+       "abbr": "AUQ",
+       "name": "Alcohol Urge Questionnaire",
+       "items": 8,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Urges"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.phenxtoolkit.org/protocols/view/520301",
+       "scholar": "https://scholar.google.com/scholar?q=%22Alcohol+Urge+Questionnaire%22",
+       "source": "Bohn et al., 1995",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "ACQ-SF-R",
+       "name": "Alcohol Craving Questionnaire Short Form Revised",
+       "items": 12,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Urges"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://adai.uw.edu/instruments/pdf/Alcohol_Craving_Questionnaire_Short_Form_Revised_20.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Alcohol+Craving+Questionnaire+Short+Form+Revised%22",
+       "source": "Singleton, 1995",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "TRI",
+       "name": "Temptation and Restraint Inventory",
+       "items": 15,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Urges"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://arc.psych.wisc.edu/self-report/temptation-and-restraint-inventory-tri/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Temptation+and+Restraint+Inventory%22",
+       "source": "Collins & Lapp, 1992",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Expectancies",
+     "blurb": "What a person believes the substance will do for them.",
+     "count": 4,
+     "measures": [
+      {
+       "abbr": "DEQ-SA",
+       "name": "Drinking Expectancy Questionnaire - Shortened Adolescent Version",
+       "items": 12,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Expectancies"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.researchgate.net/publication/317952752_Drinking_Expectancy_Questionnaire-Shortened_Adolescent_version_DEQ-SA/link/5b0cbed90f7e9b1ed7fbc5ab/download",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drinking+Expectancy+Questionnaire+-+Shortened+Adolescent+Version%22",
+       "source": "Patton et al., 2018",
+       "psychometrics": {
+        "norms": "",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "B-CEOA",
+       "name": "Brief version of the Comprehensive Effects of Alcohol Questionnaire",
+       "items": 15,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Expectancies"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.phenxtoolkit.org/toolkit_content/archive/520000/520401_Protocol.docx",
+       "scholar": "https://scholar.google.com/scholar?q=%22Brief+version+of+the+Comprehensive+Effects+of+Alcohol+Questionnaire%22",
+       "source": "Ham et al., 2005",
+       "psychometrics": {
+        "norms": "",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "DEQ-A",
+       "name": "Drinking Expectancy Questionnaire - Adolescent Version",
+       "items": 24,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Expectancies"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.researchgate.net/publication/317952740_Drinking_Expectancy_Questionnaire-Adolescent_version_DEQ-A/link/5952bbacaca272a343db4a74/download",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drinking+Expectancy+Questionnaire+-+Adolescent+Version%22",
+       "source": "Oei et al., n.d.",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "DRIE",
+       "name": "Drinking-Related Locus-of-Control Scale",
+       "items": 25,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Expectancies",
+        "Self-Efficacy"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.drugsandalcohol.ie/26771/1/Drinking_Related_Internal_External_Locus_of_Control_Scale_103.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drinking-Related%C2%A0Locus-of-Control%C2%A0Scale%22",
+       "source": "Keyson & Janda, n.d.",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Discriminant",
+         "Discrim"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Motives",
+     "blurb": "Reasons a person gives for using.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "DMQ-R",
+       "name": "Drinking Motives Questionnaire-Revised",
+       "items": 20,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Motives"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://arc.psych.wisc.edu/self-report/drinking-motive-questionnaires-dmq/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drinking+Motives+Questionnaire-Revised%22",
+       "source": "Cooper, 1994",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Self-Efficacy",
+     "blurb": "Confidence in the ability to abstain or cut back.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "AASE",
+       "name": "Alcohol Abstinence Self-efficacy Scale",
+       "items": 20,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Self-Efficacy"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://habitslab.umbc.edu/self-efficacy-scales/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Alcohol+Abstinence+Self-efficacy+Scale%22",
+       "source": "DiClemente et al., 1994",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Nicotine",
+   "count": 16,
+   "constructs": [
+    {
+     "name": "Use",
+     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "count": 2,
+     "measures": [
+      {
+       "abbr": "HONC",
+       "name": "Hooked on Nicotine Checklist",
+       "items": 10,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.umassmed.edu/globalassets/attocpenn/the_hooked_on_nicotine_checklist.pdf?_t_id=1B2M2Y8AsgTpgAmY7PhCfg%3D%3D&_t_q=HONC&_t_tags=language%3A%2Csiteid%3Ab5a143c9-b51e-4bac-9eab-62560b986673&_t_ip=192.197.205.213&_t_hit.id=UMassMedicalSchool_Models_Media_GenericMedia/_5988cfa9-f23e-48dc-8117-5a8bb1754254&_t_hit.pos=2",
+       "scholar": "https://scholar.google.com/scholar?q=%22Hooked+on+Nicotine+Checklist%22",
+       "source": "DiFranza et al., 2002",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "PSECDI",
+       "name": "Penn State E-Cigarette Dependence index",
+       "items": 10,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://research.med.psu.edu/smoking/dependence-index/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Penn+State+E-Cigarette+Dependence+index%22",
+       "source": "Foulds et al., 2015",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Convergent"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Severity",
+     "blurb": "How entrenched the disorder is — dependence and problem severity.",
+     "count": 8,
+     "measures": [
+      {
+       "abbr": "FTND",
+       "name": "Fagerstrom Test for Nicotine Dependence",
+       "items": 6,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.aarc.org/wp-content/uploads/2014/08/Fagerstrom_test.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Fagerstrom+Test+for+Nicotine+Dependence%22",
+       "source": "Heatherton et al., 1991",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Convergent"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "mFTQ",
+       "name": "Modified Fagerstrom Tolerance Questionnaire",
+       "items": 7,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Severity",
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://carehere.com/wp-content/uploads/2018/02/fagerstromnicotinedependencymeasure.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Modified+Fagerstrom+Tolerance+Questionnaire%22",
+       "source": "Prokhorov et al., 1996",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Discriminant",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "HSI",
+       "name": "Heaviness of Smoking Index",
+       "items": 2,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://moqc.org/wp-content/uploads/2017/08/ASCO_Heaviness-of-Smoking-Index.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Heaviness+of+Smoking+Index%22",
+       "source": "Heatherton et al., 1989",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Adequate",
+        "validity": [
+         "Convergent",
+         "Discriminant",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "GNSBQ",
+       "name": "Glover-Nilsson Smoking Behavioral Questionnaire",
+       "items": 11,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "http://pneumoncy.com/wp-content/uploads/2012/05/Glover-Nilsson-Smoking-Behavioral-Questionnaire.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Glover-Nilsson+Smoking+Behavioral+Questionnaire%22",
+       "source": "Glover et al., 2005",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discrim"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "AUTOS",
+       "name": "Autonomy over Tobacco Scale",
+       "items": 12,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Severity",
+        "Urges",
+        "Withdrawal"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://healthcareproviders.albertaquits.ca/files/file/5cc8db061f4cc/Autonomy_Over_Tobacco_Scale.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Autonomy+over+Tobacco+Scale%22",
+       "source": "DiFranza et al., 2009",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Adequate",
+        "validity": [
+         "Concurrent",
+         "Discrim"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "FTND-ST",
+       "name": "Fagerstrom Test for Nicotine Dependence for Smokeless Tobacco Users",
+       "items": 6,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://ctimaine.org/wp-content/uploads/2019/11/Fagerstrom-Scale-for-Nicotine-Dependence-Smokeless-Tobacco.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Fagerstrom+Test+for+Nicotine+Dependence+for+Smokeless+Tobacco+Users%22",
+       "source": "Ebbert et al., 2006",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "SSTDS",
+       "name": "Severson 7-item Smokeless Tobacco Dependence Scale",
+       "items": 7,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.umassmed.edu/globalassets/center-for-tobacoo-cttrt/tts-part-1/module-4/severson_smokeless_tobacco_dependence.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Severson+7-item+Smokeless+Tobacco+Dependence+Scale%22",
+       "source": "Severson et al., 2003",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "EDS-4",
+       "name": "E-cigarette Dependence Scale",
+       "items": 22,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://downloads.aap.org/RCE/EDS_Adolescent_Version_4_items.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22E-cigarette+Dependence+Scale%22",
+       "source": "Morean et al., 2019",
+       "psychometrics": {
+        "norms": "",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Consequences",
+     "blurb": "Harms and negative outcomes that follow from use.",
+     "count": 3,
+     "measures": [
+      {
+       "abbr": "WSWS2-B",
+       "name": "Wisconsin Smoking Withdrawal Scale - Brief",
+       "items": 6,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Consequences",
+        "Withdrawal"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://ctri.wisc.edu/researchers/measures-methods/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Wisconsin+Smoking+Withdrawal+Scale+-+Brief%22",
+       "source": "Smith et al., 2021",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Adequate",
+        "validity": [
+         "Convergent",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "S-SCQ",
+       "name": "Short Form of the Smoking Consequences Questionnaire",
+       "items": 21,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Consequences"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://cancercontrol.cancer.gov/sites/default/files/2020-06/short_form_smoking_consequences_questionnaire.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Short+Form+of+the+Smoking+Consequences+Questionnaire%22",
+       "source": "Myers et al., 2003",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "BSCQ-A",
+       "name": "Brief Smoking Consequences Questionnaire",
+       "items": 25,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Consequences"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://faculty.lsu.edu/copelanlab/scq_information.php",
+       "scholar": "https://scholar.google.com/scholar?q=%22Brief+Smoking+Consequences+Questionnaire%22",
+       "source": "Rash & Copeland, 2008",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Withdrawal",
+     "blurb": "Symptoms experienced on cessation or reduction.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "WSWS2-L",
+       "name": "Wisconsin Smoking Withdrawal Scale - Long",
+       "items": 19,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Withdrawal"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://ctri.wisc.edu/researchers/measures-methods/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Wisconsin+Smoking+Withdrawal+Scale+-+Long%22",
+       "source": "Smith et al., 2021",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Adequate",
+        "validity": [
+         "Convergent",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Self-Efficacy",
+     "blurb": "Confidence in the ability to abstain or cut back.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "SRQ",
+       "name": "Smoking Restraint Questionnaire",
+       "items": 12,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Self-Efficacy"
+       ],
+       "accessible": true,
+       "accessType": "Needs formatting",
+       "link": "https://eprints.utas.edu.au/23560/1/Blake_whole_thesis.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Smoking+Restraint+Questionnaire%22",
+       "source": "Blake et al., 2016",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Recovery",
+     "blurb": "Progress, readiness, and change over the course of treatment.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "SASEQ",
+       "name": "Smoking Abstinence Self-efficacy Questionnaire",
+       "items": 6,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Recovery",
+        "Self-Efficacy"
+       ],
+       "accessible": true,
+       "accessType": "Needs formatting",
+       "link": "https://link.springer.com/content/pdf/10.1007/s12529-012-9229-2.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Smoking+Abstinence+Self-efficacy+Questionnaire%22",
+       "source": "Spek et al., 2013",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cannabinoid",
+   "count": 6,
+   "constructs": [
+    {
+     "name": "Use",
+     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "count": 2,
+     "measures": [
+      {
+       "abbr": "CUDIT-R",
+       "name": "Cannabis Use Disorders Identification Test - Revised",
+       "items": 8,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://bpac.org.nz/BPJ/2010/June/docs/addiction_CUDIT-R.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Cannabis+Use+Disorders+Identification+Test+-+Revised%22",
+       "source": "Adamson et al., 2010",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Convergent",
+         "Discriminant",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "CUPIT",
+       "name": "Cannabis Use Problems Identification Test",
+       "items": 16,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.massey.ac.nz/massey/fms/Colleges/College%20of%20Humanities%20and%20Social%20Sciences/Psychology/Research/cupit/CUPIT_print-version.pdf?34719A4A1189BE5451B67AB1B43B9B0C",
+       "scholar": "https://scholar.google.com/scholar?q=%22Cannabis+Use+Problems+Identification+Test%22",
+       "source": "Bashford et al., 2010",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Good",
+        "validity": [
+         "Convergent",
+         "Discriminant",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Consequences",
+     "blurb": "Harms and negative outcomes that follow from use.",
+     "count": 2,
+     "measures": [
+      {
+       "abbr": "MPS",
+       "name": "Marijuana Problems Scale",
+       "items": 19,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Consequences"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://adai.uw.edu/mcacp/docs/marijuanaproblemscale.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Marijuana+Problems+Scale%22",
+       "source": "Stephens et al., 2000",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "CPQ",
+       "name": "Cannabis Problems Questionnaire",
+       "items": 22,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Consequences"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://cannabissupport.com.au/wp-content/uploads/2021/02/cannabis-problems-questionnaire.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Cannabis+Problems+Questionnaire%22",
+       "source": "Copeland et al., 2005",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Adequate",
+        "testRetest": "Adequate",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Withdrawal",
+     "blurb": "Symptoms experienced on cessation or reduction.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "CWS",
+       "name": "Cannabis Withdrawal Scale",
+       "items": 19,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Withdrawal"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://insight.qld.edu.au/shop/cannabis-withdrawal-scale-cws-insight-2019",
+       "scholar": "https://scholar.google.com/scholar?q=%22Cannabis+Withdrawal+Scale%22",
+       "source": "Allsop et al., 2011",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Motives",
+     "blurb": "Reasons a person gives for using.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "MMM",
+       "name": "Marijuana Motives Measure",
+       "items": 25,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Motives"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.phenxtoolkit.org/toolkit_content/archive/520000/520503_Protocol.docx",
+       "scholar": "https://scholar.google.com/scholar?q=%22Marijuana+Motives+Measure%22",
+       "source": "Simons et al., 1998",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Opioid",
+   "count": 4,
+   "constructs": [
+    {
+     "name": "Use",
+     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "count": 3,
+     "measures": [
+      {
+       "abbr": "COMM",
+       "name": "Current Opioid Misuse Measure",
+       "items": 17,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.utahmed.org/docs/CS_Resources/COMM%20-%20Current%20Opioid%20Misuse%20Measure.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Current+Opioid+Misuse+Measure%22",
+       "source": "Butler et al., 2007",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "Excellent",
+        "validity": [
+         "Convergent",
+         "Discriminant",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "SOAPP-R",
+       "name": "Screener and Opioid  Assessment for Patients with Pain - Revised",
+       "items": 24,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.helpisherede.com/Content/Documents/SOAPP-Tool.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Screener+and+Opioid++Assessment+for+Patients+with+Pain+-+Revised%22",
+       "source": "Butler et al., 2008",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Discriminant",
+         "Predictive"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "RODS",
+       "name": "Rapid Opioid Dependence Screen",
+       "items": 8,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://yale.app.box.com/s/xf4hvm8b2wyd6zkwh8bb4kj2drtuhjqg",
+       "scholar": "https://scholar.google.com/scholar?q=%22Rapid+Opioid+Dependence+Screen%22",
+       "source": "Wickersham, 2015",
+       "psychometrics": {
+        "norms": "",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Withdrawal",
+     "blurb": "Symptoms experienced on cessation or reduction.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "SOWS",
+       "name": "Subjective Opiate Withdrawal Scale",
+       "items": 16,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Withdrawal"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.asam.org/docs/default-source/education-docs/sows_8-28-2017.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Subjective+Opiate+Withdrawal+Scale%22",
+       "source": "Handelsman et al., 1987",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Adequate",
+        "testRetest": "Excellent",
+        "validity": [
+         "Discriminant"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Stimulant",
+   "count": 2,
+   "constructs": [
+    {
+     "name": "Withdrawal",
+     "blurb": "Symptoms experienced on cessation or reduction.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "ACSA",
+       "name": "Amphetamine Cessation Symptom Assessment",
+       "items": 16,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Withdrawal"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://aodscreening.flinders.edu.au/index.php/download_file/force/49/195",
+       "scholar": "https://scholar.google.com/scholar?q=%22Amphetamine+Cessation+Symptom+Assessment%22",
+       "source": "McGregor et al., 2008",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Urges",
+     "blurb": "Craving and momentary desire to use.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "CCQ-Brief",
+       "name": "Cocaine Craving Questionnaire Brief",
+       "items": 10,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Urges"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.phenxtoolkit.org/toolkit_content/PDF/PX520302.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Cocaine+Craving+Questionnaire+Brief%22",
+       "source": "Sussner et al., 2006",
+       "psychometrics": {
+        "norms": "",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Benzodiazepine",
+   "count": 1,
+   "constructs": [
+    {
+     "name": "Withdrawal",
+     "blurb": "Symptoms experienced on cessation or reduction.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "BWSQ2",
+       "name": "Benzodiazepine Withdrawal Symptom Questionnaire",
+       "items": 20,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Withdrawal"
+       ],
+       "accessible": true,
+       "accessType": "Needs formatting",
+       "link": "https://pdf.sciencedirectassets.com/271035/1-s2.0-S0165032700X01279/1-s2.0-016503279090009W/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEYaCXVzLWVhc3QtMSJHMEUCIQDJZgzVDVx1CPll%2FumIEhoKJQfiOMCtspVb0LPkw6A%2BzwIgXsYzK5eDSmXd9Kq2gmPqBHuCbrqxlTrX0seBvXL%2BVhIqgwQIj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwwNTkwMDM1NDY4NjUiDOCF6r1%2B%2BqAhNL6nSCrXAy5ZEyIfRzgi4DX183vDWX%2FvjWjVyy5yNjMWINaUbmkrGSJtvB7svlPNxPG92j1EyGU0PnJOTZdb%2BqU1ijwJAy%2FkFOfUN19yvTurXHXeaIaNd5tf%2BrnOiBFHBPmwxrlZ%2B4TG%2FaxLCDSaTJqpmAf6ZsvttZW0nW1qZ5v7mo2GTzWizzyQQ6%2FadZNR4x1%2FjsFCvYV9nWnaqU1Poc8w2fBo2S10uhA2QkupGEKnOo4nnVKHDWuKfJMzQDTsGyIhXKcuHqlzj%2BvWxbUgIAr4KiDUJM%2BWEjCxgx%2FXmfa9zjd1P9BDKlh3nhe5QeDo16T83ETceDpvfpiMq7%2BLAyG3JxERycpCwowe%2BiFEm8u0yYg7KmpEvIk6C5C0oOrbfFD6KBqcBoYfIsgCS74PJ%2BFGNu2DWQnoz7KjTwdudFpNTB5kZ3D0kdT3h3bW9VdHQBY%2FG6tX6EBE%2FwOJffzVstfQf4cyu786F8jEHmsoLQ2JF7QrzSbJM%2B2ai%2FStYLA0kejaDNHerXuBv3GV3D01vlihlmxa%2B0%2BZ3V%2F%2FcLBLw1hO%2Bs07LFg1%2Bg1mXvUPo8DonhGyfll6eDgkB6WTJCqsxE72PFyQMpFiwksgWR4QxMR7mKTgZJQxGt2b%2FDZ65DCf2t2JBjqlAavokqhimbu2mR84lilXS%2BIc7naNSADGgbDNJmEK3npiYe7XlVFQUkFHKuOWR7OpJUNWIOLgDOYPoEtDpCYh55p%2BaV5LkgRTXaSq8flY2rQtyCQO5txny0NaHFdzBzaQqIAWSDEeOl0D%2FYU7ZnamwEbvpN58XSGe5SNrq5KwHvnVHS8PV4hy8aeGtuSG7C55sSaI%2FQE2L9r%2BcoHoDKeaYXnBToEwmQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210907T144233Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYRMUDRY44%2F20210907%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a9fcc1544c5996d6060882a9eaaf23bf139e33836dcc9bce390d1b00d8b268a4&hash=ca4f930f6b9eb4971937d1302d68fddbafa4b751a941738d4ada14b3b321327f&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=016503279090009W&tid=spdf-759469ea-372f-4565-a90e-c7892385bc96&sid=605784648e8131417e195c23e22f4ba1857fgxrqa&type=client",
+       "scholar": "https://scholar.google.com/scholar?q=%22Benzodiazepine+Withdrawal+Symptom+Questionnaire%22",
+       "source": "Tyrer et al., 1990",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Adequate",
+        "testRetest": "Excellent",
+        "validity": [
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "General",
+   "count": 16,
+   "constructs": [
+    {
+     "name": "Use",
+     "blurb": "Quantity, frequency, and pattern of consumption.",
+     "count": 6,
+     "measures": [
+      {
+       "abbr": "CRAFFT",
+       "name": "CRAFFT Substance Abuse Screening Instrument",
+       "items": 9,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.sunshinehealth.com/content/dam/centene/Sunshine/pdfs/CRAFFT.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22CRAFFT+Substance+Abuse+Screening+Instrument%22",
+       "source": "Knight et al., 1999",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "DAST-10",
+       "name": "Drug Abuse Screening Test-10",
+       "items": 10,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://gwep.usc.edu/wp-content/uploads/2019/11/DAST-10-drug-abuse-screening-test.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drug+Abuse+Screening+Test-10%22",
+       "source": "Bohn et al., 1991",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "DUDIT",
+       "name": "Drug Use Disorders Identification Test",
+       "items": 11,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://paihdelinkki.fi/sites/default/files/duditmanual.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drug+Use+Disorders+Identification+Test%22",
+       "source": "Berman et al., 2003",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "DAST-20",
+       "name": "Drug Abuse Screening Test-20",
+       "items": 20,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://odh.ohio.gov/wps/wcm/connect/gov/db243c91-5fcc-4b6e-b421-2ff8d64b30b7/Substance+Abuse+Screen+%28DAST-20%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-db243c91-5fcc-4b6e-b421-2ff8d64b30b7-n5rNH7M",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drug+Abuse+Screening+Test-20%22",
+       "source": "Skinner & Goldberg, 1986",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Good",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "IRIS",
+       "name": "Indigenous Risk Impact Screen",
+       "items": 13,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://insight.qld.edu.au/file/153/download",
+       "scholar": "https://scholar.google.com/scholar?q=%22Indigenous+Risk+Impact+Screen%22",
+       "source": "Schlesinger et al., 2007",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Convergent"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "SSI-SA",
+       "name": "Simple Screening Instrument Substance Abuse",
+       "items": 18,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.smchealth.org/sites/main/files/file-attachments/1309587949simplescreeninginstrumentforaodabuseform.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Simple+Screening+Instrument+Substance+Abuse%22",
+       "source": "Center for Substance Abuse Treatment, 1994",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Severity",
+     "blurb": "How entrenched the disorder is — dependence and problem severity.",
+     "count": 4,
+     "measures": [
+      {
+       "abbr": "SDS",
+       "name": "Severity of Dependence Scale",
+       "items": 5,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.promptdoc.com/wp-content/uploads/2019/02/Severity-of-Dependence-Scale.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Severity+of+Dependence+Scale%22",
+       "source": "Gossop et al., 1995",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "LDQ",
+       "name": "Leeds Dependence Questionnaire",
+       "items": 10,
+       "rating": "Excellent",
+       "tier": 3,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470693742.app7",
+       "scholar": "https://scholar.google.com/scholar?q=%22Leeds+Dependence+Questionnaire%22",
+       "source": "Raistrick et al., 1994",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant",
+         "Discrim"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "ASSIST-FC",
+       "name": "Alcohol, Smoking and Substance Involvement Screening Test – Frequency and Concern",
+       "items": 2,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Severity",
+        "Use"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://health.uconn.edu/sbirtacademy/wp-content/uploads/sites/101/2018/03/ASSIST-FC_Screening-Test_Scoring_Response-Card.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Alcohol%2C+Smoking+and+Substance+Involvement+Screening+Test+%E2%80%93+Frequency+and+Concern%22",
+       "source": "McRee et al., 2018",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Adequate",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Discriminant"
+        ],
+        "treatmentSensitivity": false
+       }
+      },
+      {
+       "abbr": "BAM-C",
+       "name": "Brief Addiction Monitor - Continuous",
+       "items": 17,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Severity"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.mentalhealth.va.gov/providers/sud/docs/BAM_Scoring_Clinical_Guidelines_01-04-2011.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Brief+Addiction+Monitor+-+Continuous%22",
+       "source": "Cacciola et al., 2013",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Excellent",
+        "validity": [
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Consequences",
+     "blurb": "Harms and negative outcomes that follow from use.",
+     "count": 2,
+     "measures": [
+      {
+       "abbr": "SIP",
+       "name": "Short Inventory of Problems",
+       "items": 15,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Consequences"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://casaa.unm.edu/inst/Short%20Inventory%20of%20Problems.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Short+Inventory+of+Problems%22",
+       "source": "Tonigan et al., 1995",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "SIP-R",
+       "name": "Short Inventory of Problems - revised",
+       "items": 15,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Consequences"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.treatmentworksforvets.org/wp-content/uploads/2018/04/SIP005.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Short+Inventory+of+Problems+-+revised%22",
+       "source": "Kiluk et al., 2013",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Self-Efficacy",
+     "blurb": "Confidence in the ability to abstain or cut back.",
+     "count": 2,
+     "measures": [
+      {
+       "abbr": "BSCQ",
+       "name": "Brief Situational Confidence Questionnaire",
+       "items": 8,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Self-Efficacy"
+       ],
+       "accessible": true,
+       "accessType": "Needs formatting",
+       "link": "https://store.samhsa.gov/sites/default/files/d7/priv/tip35_final_508_compliant_-_02252020_0.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Brief+Situational+Confidence+Questionnaire%22",
+       "source": "Breslin et al., 2000",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "DTCQ-8",
+       "name": "Drug-Taking Confidence Questionnaire",
+       "items": 8,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Self-Efficacy"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://help.greenspacehealth.com/article/77-situational-confidence-drugs-dtcq-8d",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drug-Taking+Confidence+Questionnaire%22",
+       "source": "Sklar & Turner, 1997",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discrim"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Recovery",
+     "blurb": "Progress, readiness, and change over the course of treatment.",
+     "count": 2,
+     "measures": [
+      {
+       "abbr": "AAQ-SA",
+       "name": "Acceptance and Action Questionnaire Substance Abuse",
+       "items": 18,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Recovery",
+        "Self-Efficacy",
+        "Urges"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://stevenchayes.com/wp-content/uploads/2019/08/Questionnaire-for-Substance-Abuse.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Acceptance+and+Action+Questionnaire+Substance+Abuse%22",
+       "source": "Luoma et al., 2011",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discrim"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "PRQ",
+       "name": "Problem Recognition Questionnaire",
+       "items": 25,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.midss.org/content/problem-recognition-questionnaire-prq-0",
+       "scholar": "https://scholar.google.com/scholar?q=%22Problem+Recognition+Questionnaire%22",
+       "source": "Winters et al., 1987",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Treatment Related",
+   "count": 7,
+   "constructs": [
+    {
+     "name": "Self-Efficacy",
+     "blurb": "Confidence in the ability to abstain or cut back.",
+     "count": 1,
+     "measures": [
+      {
+       "abbr": "DASES",
+       "name": "Drug Abstinence Self-Efficacy Scale",
+       "items": 20,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Self-Efficacy"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://habitslab.umbc.edu/self-efficacy-scales/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Drug+Abstinence+Self-Efficacy+Scale%22",
+       "source": "Hiller et al., 2000",
+       "psychometrics": {
+        "norms": "",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Convergent",
+         "Discrim"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "Recovery",
+     "blurb": "Progress, readiness, and change over the course of treatment.",
+     "count": 6,
+     "measures": [
+      {
+       "abbr": "RCQ[TV]",
+       "name": "Treatment version - Readiness to Change Questionnaire",
+       "items": 12,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": false,
+       "accessType": "Print-ready",
+       "link": "https://core.ac.uk/download/pdf/4145943.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Treatment+version+-+Readiness+to+Change+Questionnaire%22",
+       "source": "Heather & Hönekopp, 2008",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Excellent",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": true
+       }
+      },
+      {
+       "abbr": "RTCQ",
+       "name": "Readiness to Change Questionnaire",
+       "items": 15,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://www.guilford.com/add/miller11_old/rtc.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Readiness+to+Change+Questionnaire%22",
+       "source": "Rollnick et al., 1992",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Adequate",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "SOCRATES",
+       "name": "Stages of Change Readiness and Treatment Eagerness Scale",
+       "items": 19,
+       "rating": "Good",
+       "tier": 2,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://casaa.unm.edu/inst/socratesv8.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Stages+of+Change+Readiness+and+Treatment+Eagerness+Scale%22",
+       "source": "Miller & Tonigan, 1997",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Good",
+        "testRetest": "Adequate",
+        "validity": [
+         "Convergent",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "BARC-10",
+       "name": "Brief Assessment of Recovery Capital",
+       "items": 10,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "http://shura.shu.ac.uk/15835/2/Best%20-Development%20and%20validation%20of%20a%20Brief%20Assessment%20of%20Recovery%20Capital%20%28BARC-10%29%20%28Scale%29.pdf",
+       "scholar": "https://scholar.google.com/scholar?q=%22Brief+Assessment+of+Recovery+Capital%22",
+       "source": "Vilsaint et al., 2017",
+       "psychometrics": {
+        "norms": "Excellent",
+        "internalConsistency": "Good",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Discriminant",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "ARME",
+       "name": "Abstinence-related motivational engagement",
+       "items": 16,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://moffitt.org/research-science/research-teams/tobacco-research-and-intervention-program-trip/trip-research/measures/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Abstinence-related+motivational+engagement%22",
+       "source": "Simmons et al., 2010",
+       "psychometrics": {
+        "norms": "Adequate",
+        "internalConsistency": "Excellent",
+        "testRetest": "",
+        "validity": [
+         "Concurrent",
+         "Convergent",
+         "Discriminant",
+         "Discrim",
+         "Predictive"
+        ],
+        "treatmentSensitivity": null
+       }
+      },
+      {
+       "abbr": "POC-20",
+       "name": "Processes of Change Questionnaire",
+       "items": 20,
+       "rating": "Adequate",
+       "tier": 1,
+       "constructs": [
+        "Recovery"
+       ],
+       "accessible": true,
+       "accessType": "Print-ready",
+       "link": "https://habitslab.umbc.edu/processes-of-change-questionnaire/",
+       "scholar": "https://scholar.google.com/scholar?q=%22Processes+of+Change+Questionnaire%22",
+       "source": "DiClemente et al., 1991",
+       "psychometrics": {
+        "norms": "Good",
+        "internalConsistency": "Excellent",
+        "testRetest": "Adequate",
+        "validity": [
+         "Convergent"
+        ],
+        "treatmentSensitivity": null
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

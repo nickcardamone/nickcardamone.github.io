@@ -3,6 +3,9 @@ _site
 .sass-cache
 .vagrant
 
+# credentials
+.git-credentials
+
 # general
 .DS_Store
 Thumbs.db

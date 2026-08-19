@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Projects:
     - CASPER: "https://project-casper.netlify.app"
-    - SUDs Measures Library: "https://ncardamo.shinyapps.io/mySUDSmeasures/"
+    - SUDs Measures Library: "suds-measures"
 
 ################
 # --- Logo --- #

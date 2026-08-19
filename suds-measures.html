@@ -1,0 +1,150 @@
+---
+layout: page
+title: Substance Use Disorder Measures
+subtitle: Free, brief, and validated self-report measures
+full-width: true
+css:
+  - /assets/css/suds-measures.css
+ext-js:
+  - https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js
+js:
+  - /assets/js/suds-measures.js
+---
+
+<div class="suds" id="suds-app" data-src="{{ '/assets/data/suds-measures.json' | relative_url }}">
+
+  <div class="suds-head">
+    <p>
+      Every measure below is a self-report scale for substance use that is short enough to
+      give in a clinic visit, available at no cost, and backed by published psychometric
+      evidence. Blobs nest by <strong>substance</strong>, then by the
+      <strong>construct</strong> the scale actually measures. Click to dive in.
+    </p>
+    <div class="suds-stats">
+      <div class="suds-stat"><b id="suds-n-measures">—</b><span>Measures</span></div>
+      <div class="suds-stat"><b id="suds-n-substances">—</b><span>Substances</span></div>
+      <div class="suds-stat"><b id="suds-n-constructs">—</b><span>Constructs</span></div>
+      <div class="suds-stat"><b id="suds-n-screened">—</b><span>Scales screened</span></div>
+    </div>
+  </div>
+
+  <div class="suds-toolbar">
+    <div class="suds-search">
+      <i class="fas fa-search fa"></i>
+      <input type="search" id="suds-search" placeholder="Search measures, constructs, substances…"
+             autocomplete="off" aria-label="Search measures">
+    </div>
+
+    <div class="suds-filter">
+      <label>Rating</label>
+      <button type="button" class="suds-chip" data-tier="Excellent" aria-pressed="false">Excellent</button>
+      <button type="button" class="suds-chip" data-tier="Good" aria-pressed="false">Good</button>
+      <button type="button" class="suds-chip" data-tier="Adequate" aria-pressed="false">Adequate</button>
+    </div>
+
+    <div class="suds-filter">
+      <label>Length</label>
+      <input type="range" id="suds-items" min="2" max="25" value="25" aria-label="Maximum number of items">
+      <output id="suds-items-out">any</output>
+    </div>
+
+    <div class="suds-filter">
+      <button type="button" class="suds-chip" data-free aria-pressed="false">Freely available</button>
+    </div>
+
+    <div class="suds-filter" style="margin-left:auto">
+      <output id="suds-matches">—</output>
+      <button type="button" class="suds-chip suds-mode" aria-pressed="false">List view</button>
+      <button type="button" class="suds-reset">Reset</button>
+    </div>
+  </div>
+
+  <div class="suds-stage">
+    <div class="suds-figure" style="opacity:0;transition:opacity .6s">
+      <nav class="suds-crumbs" aria-label="Breadcrumb"></nav>
+      <svg role="img" aria-label="Hierarchical map of substance use disorder measures"></svg>
+      <p class="suds-empty">No measures match these filters.</p>
+      <div class="suds-tip" role="status"></div>
+
+      <aside class="suds-detail" aria-live="polite">
+        <button type="button" class="suds-detail-close" aria-label="Close details">&times;</button>
+        <div class="suds-detail-body"></div>
+      </aside>
+    </div>
+
+    <div class="suds-list is-sr" aria-label="All measures, grouped by substance and construct"></div>
+  </div>
+
+  <div class="suds-legend">
+    <div class="suds-legend-group">
+      <strong>Substance</strong>
+      <button type="button" class="suds-key" data-substance="Alcohol" aria-pressed="true"><i style="background:#b0524a"></i>Alcohol</button>
+      <button type="button" class="suds-key" data-substance="Nicotine" aria-pressed="true"><i style="background:#c8863c"></i>Nicotine</button>
+      <button type="button" class="suds-key" data-substance="General" aria-pressed="true"><i style="background:#5b7a9e"></i>General</button>
+      <button type="button" class="suds-key" data-substance="Treatment Related" aria-pressed="true"><i style="background:#9c5c86"></i>Treatment</button>
+      <button type="button" class="suds-key" data-substance="Cannabinoid" aria-pressed="true"><i style="background:#6d9150"></i>Cannabinoid</button>
+      <button type="button" class="suds-key" data-substance="Opioid" aria-pressed="true"><i style="background:#7a5fa8"></i>Opioid</button>
+      <button type="button" class="suds-key" data-substance="Stimulant" aria-pressed="true"><i style="background:#c2a02f"></i>Stimulant</button>
+      <button type="button" class="suds-key" data-substance="Benzodiazepine" aria-pressed="true"><i style="background:#3f8f8a"></i>Benzodiazepine</button>
+    </div>
+    <div class="suds-legend-group">
+      <strong>Rating</strong>
+      <span class="suds-key"><i style="background:#e2c3bf"></i>Adequate</span>
+      <span class="suds-key"><i style="background:#cb8b84"></i>Good</span>
+      <span class="suds-key"><i style="background:#b0524a"></i>Excellent</span>
+    </div>
+    <div class="suds-legend-group">
+      <strong>Blob size</strong>
+      <span class="suds-key is-size"><i></i>Number of items</span>
+    </div>
+    <div class="suds-legend-group">
+      <strong>Dashed outline</strong>
+      <span class="suds-key">Not freely available</span>
+    </div>
+  </div>
+
+  <div class="suds-notes">
+    <h3>How to read this</h3>
+    <p>
+      Measure search was conducted Summer–Fall 2021. Of the scales screened, most were set
+      aside because they were too long for routine use, could not be located in full, shipped
+      without scoring instructions, or sat behind copyright or cost. What remains is the set
+      you can actually pick up and use.
+    </p>
+
+    <h3>Psychometric ratings</h3>
+    <p>
+      Ratings follow the rubric in De Los Reyes &amp; Langer (2018). Each measure is graded
+      <em>Adequate</em>, <em>Good</em>, or <em>Excellent</em> on the strength of its published
+      evidence:
+    </p>
+    <dl>
+      <dt>Internal consistency</dt>
+      <dd>The degree to which items on the measure describe the same construct.</dd>
+      <dt>Test–retest reliability</dt>
+      <dd>Scoring consistency for an unchanged respondent taking the measure twice.</dd>
+      <dt>Normative data</dt>
+      <dd>Published means and standard deviations, or cut-offs separating clinically significant scores.</dd>
+      <dt>Validity evidence</dt>
+      <dd>Concurrent, convergent, discriminant, and predictive evidence useful for clinical decisions.</dd>
+      <dt>Treatment sensitivity</dt>
+      <dd>How responsive the scale is to change brought on by treatment or recovery.</dd>
+    </dl>
+
+    <h3>Access</h3>
+    <p>
+      <strong>Print-ready</strong> means the link opens a version you can use as-is.
+      <strong>Needs formatting</strong> means the measure is available but may need to be laid
+      out before use. A dashed outline marks the handful of measures that are validated and
+      brief but not freely distributable.
+    </p>
+
+    <p>
+      Questions and corrections are welcome at
+      <a href="mailto:Nicholas.Cardamone@pennmedicine.upenn.edu">Nicholas.Cardamone@pennmedicine.upenn.edu</a>.
+      Data provided by the
+      <a href="https://hosting.med.upenn.edu/cmh/" target="_blank" rel="noopener">University of Pennsylvania Center for Mental Health</a>.
+    </p>
+  </div>
+
+</div>
