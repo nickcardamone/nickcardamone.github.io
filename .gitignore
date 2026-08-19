@@ -14,3 +14,6 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+
+# AI use log — holds raw prompt text, never commit
+tools/ai-log/queue/
